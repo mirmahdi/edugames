@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drag & Fill - Interactive Learning</title>
+  <link rel="stylesheet" href="styles/drag-fill-game.css" />
+</head>
+<body>
+
+  <!-- Title -->
+  <h1 style="text-align: center;">Drag & Fill Activity</h1>
+
+  <!-- Button Group (Centered) -->
+  <div id="button-container">
+    <button id="submitAnswers" class="action-button">Check Answers</button>
+    <button id="solveAll" class="action-button">Solve All</button>
+    <button id="resetGame" class="action-button">Reset</button>
+    <button id="undoMove" class="action-button" title="Undo last move">&#8630;</button>
+    <button id="redoMove" class="action-button" title="Redo last undone move">&#8631;</button>
+  </div>
+
+  <!-- Score and Timer Row -->
+  <div id="score-timer-container">
+    <div id="score-timer">
+      <div>⏱️ Time: <span id="timer">00:00</span></div>
+      <div>⭐ Score: <span id="score">0</span></div>
+    </div>
+  </div>
+
+  <!-- Immediate Feedback Toggle -->
+  <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px; gap: 8px;">
+    <div class="label-text">
+      Immediate<br>Feedback
+    </div>
+    <label for="feedbackToggle" class="toggle-switch">
+      <input type="checkbox" id="feedbackToggle" checked />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- Word Bank Section -->
+  <div id="draggables" class="word-bank">
+    <!-- Populated by JS -->
+  </div>
+
+  <!-- Definitions / Blanks Section -->
+  <div id="game-container">
+    <div id="text-area">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+
+  <!-- Feedback Message -->
+  <div id="feedback" style="text-align:center; margin-top:20px;"></div>
+
+  <!-- Footer -->
+  <footer style="text-align:center; margin-top: 40px; font-size: 0.8rem;">
+    &copy; Dr. Najafabadi — 2025
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="scripts/drag-fill-game.js"></script>
+  <script>
+    // Parse URL to get JSON data file
+    const urlParams = new URLSearchParams(window.location.search);
+    const dataFile = urlParams.get('data') || 'chapter5.json'; // fallback to default
+
+    fetch(`data/${dataFile}`)
+      .then(response => response.json())
+      .then(data => {
+        startDragFillGame(data.terms, data.definitions);
+      })
+      .catch(error => {
+        console.error('Error loading data:', error);
+        document.getElementById('feedback').textContent = 'Error loading data.';
+      });
+  </script>
+
+</body>
+</html>
