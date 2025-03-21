@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matching Terms Game</title>
+  <link rel="stylesheet" href="styles/matching-game.css">
+</head>
+<body>
+
+  <h1>Match the Terms with Definitions!</h1>
+
+  <div class="game-container">
+    <div class="column" id="terms"></div>
+    <div class="column" id="definitions"></div>
+  </div>
+
+  <div id="matched-container">
+    <h2>Matched Pairs</h2>
+    <div id="matched-pairs"></div>
+  </div>
+
+  <script src="scripts/matching-game.js"></script>
+  <script>
+    // Game-specific data for this page
+    const terms = [
+      { id: 1, text: "Entity-Relationship Diagram (ERD)" },
+      { id: 2, text: "Data Flow Diagram (DFD)" },
+      { id: 3, text: "Normalization" },
+    ];
+
+    const definitions = [
+      { id: 1, text: "A visual representation of entities and their relationships in a system." },
+      { id: 2, text: "A diagram that shows how data moves through an information system." },
+      { id: 3, text: "The process of organizing data to minimize redundancy." },
+    ];
+
+    // Launch the game!
+    startMatchingGame(terms, definitions);
+  </script>
+
+</body>
+</html>
