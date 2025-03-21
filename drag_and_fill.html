@@ -61,21 +61,41 @@
 
   <!-- JS Scripts -->
   <script src="scripts/drag-fill-game.js"></script>
-  <script>
-    // Parse URL to get JSON data file
-    const urlParams = new URLSearchParams(window.location.search);
-    const dataFile = urlParams.get('data') || 'chapter5.json'; // fallback to default
+	<script>
+		// Get the ?data= query parameter from the URL
+		const urlParams = new URLSearchParams(window.location.search);
+		const dataFile = urlParams.get('data');
 
-    fetch(`data/${dataFile}`)
-      .then(response => response.json())
-      .then(data => {
-        startDragFillGame(data.terms, data.definitions);
-      })
-      .catch(error => {
-        console.error('Error loading data:', error);
-        document.getElementById('feedback').textContent = 'Error loading data.';
-      });
-  </script>
+		const feedback = document.getElementById('feedback');
+		const title = document.querySelector('h1');
+
+		if (!dataFile) {
+			// No data specified in URL
+			feedback.textContent = '⚠️ No data file specified. Please provide a data file in the URL. Example: ?data=chapter5.json';
+			feedback.style.color = '#dc3545'; // Red color for the warning
+			title.textContent = 'No Data Loaded';
+		} else {
+			// Try fetching the provided JSON data
+			fetch(`data/${dataFile}`)
+				.then(response => {
+					if (!response.ok) {
+						throw new Error(`HTTP error! Status: ${response.status}`);
+					}
+					return response.json();
+				})
+				.then(data => {
+					title.textContent = `Drag & Fill Activity - ${dataFile}`;
+					startDragFillGame(data.terms, data.definitions);
+				})
+				.catch(error => {
+					console.error('Error loading data:', error);
+					feedback.textContent = `❌ Failed to load data file: ${dataFile}`;
+					feedback.style.color = '#dc3545'; // Red color for error
+					title.textContent = 'Data Load Error';
+				});
+		}
+	</script>
+
 
 </body>
 </html>
