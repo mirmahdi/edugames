@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Systems Analysis and Design - Chapter 5 Key Terms</title>
+  <link rel="stylesheet" href="styles/drag-fill-game.css" />
+</head>
+<body>
+
+  <h1>Modern Systems Analysis and Design (9e, 2020 Pearson) - Chapter 5 Key Terms</h1>
+  <p>Drag the correct terms into the blank spaces below:</p>
+
+  <div id="game-container">
+    <div id="text-area">
+      <p>
+        <strong>_____</strong>: The process of evaluating a project’s expected costs and benefits, both tangible and intangible.<br><br>
+        <strong>_____</strong>: A diagram that depicts the logical components of a system.<br><br>
+        <strong>_____</strong>: The ongoing process of evaluating whether a project is worth pursuing at different stages of its development.<br><br>
+        <strong>_____</strong>: A measure of whether the organization has the resources to develop or purchase the system.<br><br>
+        <strong>_____</strong>: The evaluation of whether the system will be accepted by the people in the organization and align with the organizational culture.<br><br>
+        <strong>_____</strong>: The ease with which a proposed system can be implemented and used effectively.<br><br>
+        <strong>_____</strong>: The measurement of whether the system can be developed given the available technical resources and expertise.<br><br>
+        <strong>_____</strong>: A project proposal component that outlines the approach, timeline, and resources for development.<br><br>
+        <strong>_____</strong>: The written description of the work that needs to be accomplished in order to deliver a product, service, or result with the specified features and functions.<br><br>
+        <strong>_____</strong>: A document that formally authorizes a project and provides the project manager with the authority to apply organizational resources.<br><br>
+        <strong>_____</strong>: A process used to systematically determine the benefits and costs of a proposed system.<br><br>
+        <strong>_____</strong>: The degree to which a system can be effectively integrated into the existing infrastructure and business processes.<br><br>
+        <strong>_____</strong>: A method for calculating the time value of money in terms of the value today of future cash flows.<br><br>
+        <strong>_____</strong>: The process of assessing the likelihood and impact of risks in a project.<br><br>
+        <strong>_____</strong>: The act of identifying and documenting risks and determining ways to prevent or mitigate them.<br><br>
+        <strong>_____</strong>: A graphic representation of the major steps in a system or process.<br><br>
+        <strong>_____</strong>: The process of determining whether the system will be usable by its intended users.<br><br>
+        <strong>_____</strong>: The measure of how well the system complies with external laws and regulations.<br><br>
+        <strong>_____</strong>: The measure of whether the project aligns with the organization’s strategic goals and priorities.<br><br>
+        <strong>_____</strong>: A systematic process of identifying and analyzing stakeholders to ensure their interests are considered.<br><br>
+        <strong>_____</strong>: The process of gaining an understanding of how an organization currently operates in order to improve future processes.<br><br>
+      </p>
+    </div>
+
+    <div id="draggables">
+      <!-- JS will populate this area -->
+    </div>
+
+    <div id="feedback"></div>
+  </div>
+
+  <script src="scripts/drag-fill-game.js"></script>
+  <script>
+    const terms = [
+      "Economic Feasibility",
+      "Logical Model",
+      "Ongoing Feasibility Assessment",
+      "Resource Feasibility",
+      "Organizational Feasibility",
+      "Operational Feasibility",
+      "Technical Feasibility",
+      "Project Plan",
+      "Scope Statement",
+      "Project Charter",
+      "Cost-Benefit Analysis",
+      "Integration Feasibility",
+      "Net Present Value",
+      "Risk Assessment",
+      "Risk Management",
+      "Process Diagram",
+      "Usability Assessment",
+      "Legal and Regulatory Feasibility",
+      "Strategic Alignment",
+      "Stakeholder Analysis",
+      "Business Process Analysis"
+    ];
+
+    startDragFillGame(terms);
+  </script>
+
+</body>
+</html>
