@@ -324,6 +324,10 @@ strong {
   font-size: 1rem;
 }
 
+#game-container {
+  transition: opacity 0.3s ease;
+}
+
 @media (max-width: 600px) {
   #text-area p {
     flex-direction: column;
