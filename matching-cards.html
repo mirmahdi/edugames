@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Matching Cards</title>
+    <link rel="stylesheet" href="styles/matching-cards.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="title-section">
+            <h1>Matching Cards</h1>
+
+            <div class="game-controls">
+                <button id="newGameButton">New Game</button>
+                <div class="rules">
+                    <div>Match: <span class="green">+10</span></div>
+                    <div>Miss: <span class="red">-2</span></div>
+                </div>
+            </div>
+
+            <div class="dropdown-container">
+                <label for="chapter">Select Chapter:</label>
+                <select id="chapter">
+                    <option value="">Select a chapter</option>
+                    <option value="data/chapter5.json">Chapter 5</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="scoreboard-container">
+            <div class="scoreboard">
+                <div class="stats-grid">
+                    <div class="stat-block" id="scoreBlock">
+                        <div class="label">SCORE</div>
+                        <div class="value" id="score">0</div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="label">MOVES</div>
+                        <div class="value" id="moves">0</div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="label">MATCHED</div>
+                        <div class="value" id="matched">0</div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="label">REMAINING</div>
+                        <div class="value" id="remaining">0</div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <progress id="progressBar" value="0" max="100"></progress>
+                </div>
+                <div class="timer">
+                    ⏱️ <span id="timer">00:00</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cards-section">
+            <h2>Terms</h2>
+            <div id="termsContainer" class="cards-grid"></div>
+        </section>
+
+        <section class="cards-section">
+            <h2>Definitions</h2>
+            <div id="definitionsContainer" class="cards-grid"></div>
+        </section>
+
+        <section class="matched-container">
+            <h2>Matched Pairs</h2>
+            <div id="matchedPairsContainer" class="matched-grid"></div>
+        </section>
+    </main>
+
+    <script src="scripts/matching-cards.js"></script>
+</body>
+</html>
