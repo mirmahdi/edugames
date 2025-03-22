@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles/hangman.css" />
+</head>
+<body>
+    <header>
+        <h1>Hangman</h1>
+    </header>
+
+    <main>
+        <section class="game-top">
+            <!-- Left Panel: New Game Button + End Game Button + Dropdowns -->
+            <div class="left-panel">
+                <div class="button-group">
+                    <button id="newGameButton" disabled>New Game</button>
+                    <button id="endGameButton" disabled>End Game</button>
+                </div>
+                <div class="hint" id="hintText">Select a chapter first!</div>
+
+                <div class="dropdown-container chapter-dropdown">
+                    <label for="chapter">Select Chapter:</label>
+                    <select id="chapter">
+                        <option value="">-- Select --</option>
+                        <option value="data/chapter5.json">Chapter 5</option>
+                    </select>
+                </div>
+
+                <div class="dropdown-container">
+                    <label for="difficulty">Difficulty:</label>
+                    <select id="difficulty">
+                        <option value="6">Easy</option>
+                        <option value="4">Medium</option>
+                        <option value="2">Hard</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Hangman drawing -->
+            <div class="hangman-drawing">
+                <svg width="200" height="250" id="hangmanSVG">
+                    <!-- Gallows (static structure) in black -->
+                    <line class="gallows" x1="20" y1="240" x2="180" y2="240" stroke-width="4"/>
+                    <line class="gallows" x1="60" y1="20" x2="60" y2="240" stroke-width="4"/>
+                    <line class="gallows" x1="60" y1="20" x2="140" y2="20" stroke-width="4"/>
+                    <line class="gallows" x1="140" y1="20" x2="140" y2="50" stroke-width="4"/>
+
+                    <!-- Hangman Parts (dynamic, start as light gray via CSS) -->
+                    <circle class="part head" cx="140" cy="70" r="20" stroke-width="4" fill="none"/>
+                    <line class="part body" x1="140" y1="90" x2="140" y2="150" stroke-width="4"/>
+                    <line class="part left-arm" x1="140" y1="110" x2="110" y2="130" stroke-width="4"/>
+                    <line class="part right-arm" x1="140" y1="110" x2="170" y2="130" stroke-width="4"/>
+                    <line class="part left-leg" x1="140" y1="150" x2="110" y2="190" stroke-width="4"/>
+                    <line class="part right-leg" x1="140" y1="150" x2="170" y2="190" stroke-width="4"/>
+                </svg>
+            </div>
+
+            <!-- Scoreboard -->
+            <div class="scoreboard">
+                <div id="scoreWrapper">
+                    <div class="score-label">WRONG</div>
+                    <div class="score-value" id="wrongGuesses">0</div>
+                    <div class="score-label">MAX</div>
+                    <div class="score-value" id="maxGuesses">6</div>
+                </div>
+
+                <div class="timer">
+                    <span class="clock-icon">🕒</span>
+                    <span id="timer">00:00</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-container">
+            <div class="left-game-area">
+                <div class="word-container" id="wordDisplay"></div>
+
+                <div class="clue-container">
+                    <h2 class="definition-label">Definition:</h2>
+                    <p id="definition">Select a chapter to start!</p>
+                </div>
+            </div>
+
+            <div class="keyboard-container">
+                <div class="keyboard" id="keyboard"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/hangman.js"></script>
+</body>
+</html>

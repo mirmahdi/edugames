@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.game-top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+#newGameButton, #endGameButton {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.3s;
+    flex: 1;
+}
+
+#newGameButton:disabled,
+#endGameButton:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+#newGameButton:hover:not(:disabled),
+#endGameButton:hover:not(:disabled) {
+    background-color: #005f73;
+    transform: scale(1.05);
+}
+
+.hint {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.dropdown-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 160px;
+}
+
+.chapter-dropdown.hidden {
+    display: none !important; /* Hide chapter dropdown with higher specificity */
+}
+
+.dropdown-container label {
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.dropdown-container select {
+    padding: 8px;
+    width: 140px;
+    font-size: 1rem;
+}
+
+.hangman-drawing {
+    width: 200px;
+}
+
+.hangman-drawing svg {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Gallows (base structure) in black */
+.hangman-drawing .gallows {
+    stroke: #000;
+    stroke-width: 4;
+}
+
+/* Hangman parts start as light gray, always visible */
+.hangman-drawing .part {
+    stroke: #ccc;
+    stroke-width: 4;
+    transition: stroke 0.5s ease;
+}
+
+/* When parts are shown, they turn black */
+.hangman-drawing .part.show {
+    stroke: #000;
+}
+
+.scoreboard {
+    background-color: #222;
+    color: #0f0;
+    border: 2px solid #555;
+    border-radius: 10px;
+    width: 120px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+}
+
+#scoreWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+.score-label {
+    text-align: right;
+    color: #888;
+}
+
+.score-value {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #000;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.score-value.flash-green {
+    background-color: #d0f8d0 !important;
+}
+
+.score-value.flash-red {
+    background-color: #f8d0d0 !important;
+}
+
+.timer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #0f0;
+}
+
+.clock-icon {
+    font-size: 1.2rem;
+}
+
+#timer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.left-game-area {
+    flex: 1;
+    text-align: left;
+}
+
+.word-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 40px;
+    column-gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.word-letter {
+    font-size: 2rem;
+    border-bottom: 3px solid #333;
+    width: 30px;
+    text-align: center;
+    flex: 0 0 auto;
+    color: #000; /* Default color for guessed letters */
+}
+
+.word-letter.revealed-wrong {
+    color: darkred;
+}
+
+.word-letter.revealed-correct {
+    color: darkgreen;
+}
+
+.word-space {
+    width: 20px;
+}
+
+.clue-container {
+    text-align: left;
+}
+
+.definition-label {
+    text-align: left;
+}
+
+#definition {
+    text-align: left;
+    line-height: 1.6; /* Increased line spacing for definition */
+}
+
+.keyboard-container {
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 10px;
+}
+
+.keyboard button {
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.keyboard button.correct {
+    background-color: #c6f6c6;
+}
+
+.keyboard button.wrong {
+    background-color: #f6c6c6;
+}
+
+.keyboard button:disabled {
+    cursor: not-allowed;
+}
+
+/* Floating Ribbons for Win Animation */
+.ribbon {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: linear-gradient(45deg, #ff0, #f00);
+    border-radius: 5px;
+    animation: float 3s ease-in-out infinite;
+    z-index: 1000;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    50% { transform: translateY(-50px) rotate(20deg); opacity: 0.8; }
+    100% { transform: translateY(-100px) rotate(-20deg); opacity: 0; }
+}
