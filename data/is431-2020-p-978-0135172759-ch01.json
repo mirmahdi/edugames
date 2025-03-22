@@ -1,0 +1,40 @@
+{
+  "terms": [
+    "Information Systems Analysis and Design",
+    "Application Software",
+    "Systems Analyst",
+    "Systems Development Methodology",
+    "Systems Development Life Cycle",
+    "Planning",
+    "Analysis",
+    "Design",
+    "Logical Design",
+    "Physical Design",
+    "Implementation",
+    "Maintenance",
+    "Object-Oriented Analysis and Design (OOAD)",
+    "Object",
+    "Inheritance",
+    "Object Class",
+    "Rational Unified Process (RUP)"
+  ],
+  "definitions": [
+    "The complex organizational process whereby computer-based information systems are developed and maintained.",
+    "Computer software designed to support organizational functions or processes.",
+    "The organizational role most responsible for the analysis and design of information systems.",
+    "A standard process followed in an organization to conduct all the steps necessary to analyze, design, implement, and maintain information systems.",
+    "The traditional methodology used to develop, maintain, and replace information systems.",
+    "The first phase of the SDLC, in which an organization’s total information system needs are identified, analyzed, prioritized, and arranged.",
+    "The second phase of the SDLC, in which system requirements are studied and structured.",
+    "The third phase of the SDLC, in which the description of the recommended solution is converted into logical and then physical system specifications.",
+    "The part of the design phase of the SDLC in which all functional features of the system chosen for development are described independently of any computer platform.",
+    "The part of the design phase of the SDLC in which the logical specifications of the system from logical design are transformed into technology-specific details from which all programming and system construction can be accomplished.",
+    "The fourth phase of the SDLC, in which the information system is coded, tested, installed, and supported in the organization.",
+    "The final phase of the SDLC, in which an information system is systematically repaired and improved.",
+    "Systems development methodologies and techniques based on objects rather than data or processes.",
+    "A structure that encapsulates (or packages) attributes and the methods that operate on those attributes. It is an abstraction of a real-world thing in which data and processes are placed together to model the structure and behavior of the real-world object.",
+    "The property that occurs when entity types or object classes are arranged in a hierarchy and each entity type or object class assumes the attributes and methods of its ancestors — that is, those higher up in the hierarchy. The property allows new but related classes to be derived from existing classes.",
+    "A logical grouping of objects that have the same (or similar) attributes and behaviors (methods).",
+    "An object-oriented systems development methodology. This methodology establishes four phases of development, each of which is organized into a number of separate iterations: inception, elaboration, construction, and transition."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "terms": [
+    "Stakeholder",
+    "Minimal Guarantee",
+    "Extend Relationship",
+    "Actor",
+    "Trigger",
+    "Use Case",
+    "Extension",
+    "Use Case Diagram",
+    "Success Guarantee",
+    "Include Relationship",
+    "Preconditions",
+    "Level",
+    "Swimlane",
+    "Event",
+    "Pool",
+    "Gateway",
+    "Flow",
+    "Activity"
+  ],
+  "definitions": [
+    "People who have a vested interest in the system being developed.",
+    "The least amount promised to the stakeholder by a use case.",
+    "An association between two use cases where one adds new behaviors or actions to the other.",
+    "An external entity that interacts with a system.",
+    "An event that initiates a use case.",
+    "A depiction of a system’s behavior or functionality under various conditions as the system responds to requests from users.",
+    "The set of behaviors or functions in a use case that follow exceptions to the main success scenario.",
+    "A picture showing system behavior, along with the key actors that interact with the system.",
+    "What a use-case must do effectively in order to satisfy stakeholders.",
+    "An association between two use cases where one use case uses the functionality contained in the other.",
+    "Things that must be true before a use case can start.",
+    "Perspective from which a use case description is written, typically ranging from high level to extremely detailed.",
+    "A way to visually encapsulate a process.",
+    "A trigger that initiates the start of a process.",
+    "A way to encapsulate a process that has two or more participants.",
+    "A decision point.",
+    "Shows the sequence of action in a process.",
+    "An action that must take place for a process to be completed."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "terms": [
+    "Data Flow Diagram (DFD)",
+    "Action Stubs",
+    "Balancing",
+    "Level-0 Diagram",
+    "Source/Sink",
+    "Indifferent Condition",
+    "Context Diagram",
+    "Primitive DFD",
+    "DFD Completeness",
+    "Decision Table",
+    "DFD Consistency",
+    "Level-n Diagram",
+    "Condition Stubs",
+    "Process",
+    "Data Store",
+    "Gap Analysis",
+    "Rules",
+    "Functional Decomposition"
+  ],
+  "definitions": [
+    "A picture of the movement of data between external entities and the processes and data stores within a system.",
+    "The part of a decision table that lists the actions that result for a given set of conditions.",
+    "The conservation of inputs and outputs to a DFD process when that process is decomposed to a lower level.",
+    "A DFD that represents a system’s major processes, data flows, and data stores at a high level of detail.",
+    "The origin and/or destination of data; sometimes referred to as external entities.",
+    "In a decision table, a condition whose value does not affect which actions are taken for two or more rules.",
+    "An overview of an organizational system that shows the system boundary, external entities that interact with the system, and the major information flows between the entities and the system.",
+    "The lowest level of decomposition for a DFD.",
+    "The extent to which all necessary components of a DFD have been included and fully described.",
+    "A matrix representation of the logic of a decision; it specifies the possible conditions for the decision and the resulting actions.",
+    "The extent to which information contained on one level of a set of nested DFDs is also included on other levels.",
+    "A DFD that is the result of n nested decompositions of a series of subprocesses from a process on a level-0 diagram.",
+    "The part of a decision table that lists the conditions relevant to the decision.",
+    "The work or actions performed on data so that they are transformed, stored, or distributed.",
+    "Data at rest, which may take the form of many different physical representations.",
+    "The process of discovering discrepancies between two or more sets of DFDs or discrepancies within a single DFD.",
+    "The part of a decision table that specifies which actions are to be followed for a given set of conditions.",
+    "An iterative process of breaking the description of a system down into finer and finer detail, which creates a set of charts in which one process on a given chart is explained in greater detail on another chart."
+  ]
+}
