@@ -2,13 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EduTools Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Educational Games Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .game-card {
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .game-card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #4CAF50;
+    }
+    .game-card-content {
+      padding: 20px;
+    }
+    .game-icon {
+      font-size: 3rem;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .play-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .play-button:hover {
+      background-color: #45a049;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to EduTools</h1>
-  <ul>
-    <li><a href="Modern_SA_and_D_9e_Pearson_Key_Terms_Ch_05_Matching.html">Chapter 5 Matching Game</a></li>
-    <li><a href="Modern_SA_and_D_9e_Pearson_Key_Terms_Ch_05_Drag_Fill.html">Chapter 5 Drag & Fill Game</a></li>
-  </ul>
+
+  <header>
+    <h1>🎮 Educational Games Hub</h1>
+    <p>Learn and play with these interactive activities!</p>
+  </header>
+
+  <main>
+    <!-- Hangman Game -->
+    <div class="game-card">
+      <div class="game-icon">🎯</div>
+      <div class="game-card-content">
+        <h2>Hangman</h2>
+        <p>Test your vocabulary skills in this classic word-guessing game! Choose a chapter and difficulty level, and try to guess the word before the hangman is completed.</p>
+        <a class="play-button" href="hangman.html">▶️ Play Hangman</a>
+      </div>
+    </div>
+
+    <!-- Matching Cards Game -->
+    <div class="game-card">
+      <div class="game-icon">🃏</div>
+      <div class="game-card-content">
+        <h2>Matching Cards</h2>
+        <p>Sharpen your memory and learning by matching terms with their definitions. Track your score, moves, and time as you play. Choose a chapter to start!</p>
+        <a class="play-button" href="matching-cards.html">▶️ Play Matching Cards</a>
+      </div>
+    </div>
+
+    <!-- Drag & Fill Game -->
+    <div class="game-card">
+      <div class="game-icon">✏️</div>
+      <div class="game-card-content">
+        <h2>Drag & Fill</h2>
+        <p>Drag the correct terms into the blanks to complete definitions and sentences. Choose immediate feedback and select chapters for a customized experience!</p>
+        <a class="play-button" href="drag_and_fill.html?data=chapter5.json">▶️ Play Drag & Fill</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Dr. Najafabadi — Interactive Learning Games
+  </footer>
+
 </body>
 </html>
