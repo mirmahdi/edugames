@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Matching Cards</title>
-    <link rel="stylesheet" href="styles/matching-cards.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -13,32 +13,25 @@
 
             <div class="game-controls">
                 <button id="newGameButton">New Game</button>
-                <div class="rules">
-                    <div>Match: <span class="green">+10</span></div>
-                    <div>Miss: <span class="red">-2</span></div>
+                <button id="endGameButton" title="Solve all pairs">End Game</button>
+                <div class="sound-toggle">
+                    <input type="checkbox" id="soundToggle" checked>
+                    <label for="soundToggle" class="sound-toggle-label" title="Toggle Sound Effects">
+                        <i class="fas fa-volume-up"></i>
+                    </label>
                 </div>
             </div>
 
-            <div class="dropdown-container">
-                <label for="chapter">Select Chapter:</label>
-                <select id="chapter">
-                    <option value="">Select a chapter</option>
-										<option value="data/is431-2020-p-978-0135172759-ch01.json">Chapter 1</option>
-										<option value="data/is431-2020-p-978-0135172759-ch02.json">Chapter 2</option>
-										<option value="data/is431-2020-p-978-0135172759-ch03.json">Chapter 3</option>
-										<option value="data/is431-2020-p-978-0135172759-ch04.json">Chapter 4</option>
-										<option value="data/is431-2020-p-978-0135172759-ch05.json">Chapter 5</option>
-										<option value="data/is431-2020-p-978-0135172759-ch06.json">Chapter 6</option>
-										<option value="data/is431-2020-p-978-0135172759-ch07.json">Chapter 7</option>
-										<option value="data/is431-2020-p-978-0135172759-ch07app.json">Chapter 7 Appendix</option>
-										<option value="data/is431-2020-p-978-0135172759-ch08.json">Chapter 8</option>
-										<option value="data/is431-2020-p-978-0135172759-ch08app.json">Chapter 8 Appendix</option>
-										<option value="data/is431-2020-p-978-0135172759-ch09.json">Chapter 9</option>
-                </select>
+            <div id="chapter-selection-area" class="dropdown-container">
+                <div id="select-wrapper"><p>Loading chapters...</p></div>
             </div>
         </div>
 
-        <div class="scoreboard-container">
+        <div class="scoreboard-section">
+            <div class="rules">
+                <div>Correct: <span class="green">+10</span></div>
+                <div>Incorrect: <span class="red">-2</span></div>
+            </div>
             <div class="scoreboard">
                 <div class="stats-grid">
                     <div class="stat-block" id="scoreBlock">
@@ -84,7 +77,5 @@
             <div id="matchedPairsContainer" class="matched-grid"></div>
         </section>
     </main>
-
-    <script src="scripts/matching-cards.js"></script>
 </body>
 </html>

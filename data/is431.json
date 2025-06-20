@@ -1,0 +1,1257 @@
+{
+  "book_title": "IS 431 Systems Analysis and Design",
+  "chapters": [
+    {
+      "chapter_id": "ch01",
+      "chapter_ref": "Chapter 1",
+      "chapter_title": "The Systems Development Environment",
+      "term_definitions": [
+        {
+          "term": "Information Systems Analysis and Design",
+          "definition": "The complex organizational process whereby computer-based information systems are developed and maintained."
+        },
+        {
+          "term": "Application Software",
+          "definition": "Computer software designed to support organizational functions or processes."
+        },
+        {
+          "term": "Systems Analyst",
+          "definition": "The organizational role most responsible for the analysis and design of information systems."
+        },
+        {
+          "term": "Systems Development Methodology",
+          "definition": "A standard process followed in an organization to conduct all the steps necessary to analyze, design, implement, and maintain information systems."
+        },
+        {
+          "term": "Systems Development Life Cycle",
+          "definition": "The traditional methodology used to develop, maintain, and replace information systems."
+        },
+        {
+          "term": "Planning",
+          "definition": "The first phase of the SDLC, in which an organization's total information system needs are identified, analyzed, prioritized, and arranged."
+        },
+        {
+          "term": "Analysis",
+          "definition": "The second phase of the SDLC, in which system requirements are studied and structured."
+        },
+        {
+          "term": "Design",
+          "definition": "The third phase of the SDLC, in which the description of the recommended solution is converted into logical and then physical system specifications."
+        },
+        {
+          "term": "Logical Design",
+          "definition": "The part of the design phase of the SDLC in which all functional features of the system chosen for development are described independently of any computer platform."
+        },
+        {
+          "term": "Physical Design",
+          "definition": "The part of the design phase of the SDLC in which the logical specifications of the system from logical design are transformed into technology-specific details from which all programming and system construction can be accomplished."
+        },
+        {
+          "term": "Implementation",
+          "definition": "The fourth phase of the SDLC, in which the information system is coded, tested, installed, and supported in the organization."
+        },
+        {
+          "term": "Maintenance",
+          "definition": "The final phase of the SDLC, in which an information system is systematically repaired and improved."
+        },
+        {
+          "term": "Object-Oriented Analysis and Design (OOAD)",
+          "definition": "Systems development methodologies and techniques based on objects rather than data or processes."
+        },
+        {
+          "term": "Object",
+          "definition": "A structure that encapsulates (or packages) attributes and the methods that operate on those attributes. It is an abstraction of a real-world thing in which data and processes are placed together to model the structure and behavior of the real-world object."
+        },
+        {
+          "term": "Inheritance",
+          "definition": "The property that occurs when entity types or object classes are arranged in a hierarchy and each entity type or object class assumes the attributes and methods of its ancestors \u2014 that is, those higher up in the hierarchy. The property allows new but related classes to be derived from existing classes."
+        },
+        {
+          "term": "Object Class",
+          "definition": "A logical grouping of objects that have the same (or similar) attributes and behaviors (methods)."
+        },
+        {
+          "term": "Rational Unified Process (RUP)",
+          "definition": "An object-oriented systems development methodology. This methodology establishes four phases of development, each of which is organized into a number of separate iterations: inception, elaboration, construction, and transition."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch02",
+      "chapter_ref": "Chapter 2",
+      "chapter_title": "The Origins of Software",
+      "term_definitions": [
+        {
+          "term": "Outsourcing",
+          "definition": "The practice of turning over responsibility for some or all of an organization's information systems applications and operations to an outside firm."
+        },
+        {
+          "term": "Enterprise Resource Planning (ERP) Systems",
+          "definition": "A system that integrates individual traditional business functions into a series of modules so that a single transaction occurs seamlessly within a single information system, rather than several separate systems."
+        },
+        {
+          "term": "Request for Proposal (RFP)",
+          "definition": "A document that is provided to vendors to ask them to propose hardware and system software that will meet the requirements of your new system."
+        },
+        {
+          "term": "Reuse",
+          "definition": "The use of previously written software resources, especially objects and components, in new applications."
+        },
+        {
+          "term": "Cloud Computing",
+          "definition": "The provision of computing resources, including applications, over the Internet so customers do not have to invest in the computing infrastructure needed to run and maintain computing resources."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch03",
+      "chapter_ref": "Chapter 3",
+      "chapter_title": "Managing the Information Systems Project",
+      "term_definitions": [
+        {
+          "term": "Project Manager",
+          "definition": "A systems analyst with a diverse set of skills management, leadership, technical, conflict management, and customer relationship\u2014who is responsible for initiating, planning, executing, and closing down a project."
+        },
+        {
+          "term": "Project",
+          "definition": "A planned undertaking of related activities to reach an objective that has a beginning and an end."
+        },
+        {
+          "term": "Deliverable",
+          "definition": "An end product of an SDLC phase."
+        },
+        {
+          "term": "Feasibility Study",
+          "definition": "A study that determines if the proposed information system makes sense for the organization from an economic and operational standpoint."
+        },
+        {
+          "term": "Project Management",
+          "definition": "A controlled process of initiating, planning, executing, and closing down a project."
+        },
+        {
+          "term": "Project Initiation",
+          "definition": "The first phase of the project management process in which activities are performed to assess the size, scope, and complexity of the project and to establish procedures to support later project activities."
+        },
+        {
+          "term": "Project Workbook",
+          "definition": "A repository for all project-related documents that is used for performing project audits, orienting new team members, communicating with management and customers, identifying future projects, and performing post-project reviews."
+        },
+        {
+          "term": "Project Planning",
+          "definition": "The second phase of the project management process that focuses on defining clear, discrete activities and the work needed to complete each activity within a single project."
+        },
+        {
+          "term": "Work Breakdown Structure (WBS)",
+          "definition": "The process of dividing the project into manageable tasks and logically ordering them to ensure a smooth evolution between tasks."
+        },
+        {
+          "term": "GANTT Chart",
+          "definition": "A graphical representation of a project that shows each task as a horizontal bar whose length is proportional to its time for completion."
+        },
+        {
+          "term": "Network Diagram",
+          "definition": "A diagram that depicts project tasks and their interrelationships."
+        },
+        {
+          "term": "Project Execution",
+          "definition": "The third phase of the project management process in which the plans created in the prior phases are put into action."
+        },
+        {
+          "term": "Project Close Down",
+          "definition": "The final phase of the project management process that focuses on bringing a project to an end."
+        },
+        {
+          "term": "Resources",
+          "definition": "Any person, group of people, piece of equipment, or material used in accomplishing an activity."
+        },
+        {
+          "term": "Critical Path Scheduling",
+          "definition": "A scheduling technique whose order and duration of a sequence of task activities directly affect the completion date of a project."
+        },
+        {
+          "term": "Critical Path",
+          "definition": "The shortest time in which a project can be completed."
+        },
+        {
+          "term": "Slack Time",
+          "definition": "The amount of time that an activity can be delayed without delaying the entire project."
+        },
+        {
+          "term": "PERT (Program Evaluation Review Technique)",
+          "definition": "A technique that uses optimistic, pessimistic, and realistic time estimates to calculate the expected completion for a particular task."
+        },
+        {
+          "term": "COCOMO",
+          "definition": "An automated software estimation model that uses historical project data and current as well as future project characteristics to estimate project costs."
+        },
+        {
+          "term": "Project Charter",
+          "definition": "A short document prepared for the customer during project initiation that describes what the project will deliver and outlines, generally at a high level, all work required to complete the project."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch04",
+      "chapter_ref": "Chapter 4",
+      "chapter_title": "Identifying and Selecting Systems Development Projects",
+      "term_definitions": [
+        {
+          "term": "Information Systems Planning",
+          "definition": "An orderly means of assessing the information needs of an organization and defining the systems, databases, and technologies that will best satisfy those needs."
+        },
+        {
+          "term": "Bottom-up Planning",
+          "definition": "A generic ISP methodology that identifies and defines IS development projects based upon solving operational business problems or taking advantage of some business opportunities."
+        },
+        {
+          "term": "Incremental Commitment",
+          "definition": "A strategy in systems analysis and design in which the project is reviewed after each phase and continuation of the project is re-justified."
+        },
+        {
+          "term": "Top-down Planning",
+          "definition": "A generic ISP methodology that attempts to gain a broad understanding of the information system needs of the entire organization."
+        },
+        {
+          "term": "Objective Statements",
+          "definition": "A series of statements that express an organization's qualitative and quantitative goals for reaching a desired future position."
+        },
+        {
+          "term": "Internet-of-Things (IoT)",
+          "definition": "A broad class of physical objects that feature an Internet address and connectivity that communicate between these objects and other Internet-enabled devices and systems."
+        },
+        {
+          "term": "Competitive Strategy",
+          "definition": "The method by which an organization attempts to achieve its mission and objectives."
+        },
+        {
+          "term": "Affinity Clustering",
+          "definition": "The process of arranging planning matrix information so the clusters of information with a predetermined level or type of affinity are placed next to each other on a matrix report."
+        },
+        {
+          "term": "Internet",
+          "definition": "A large, worldwide network of networks that use a common protocol to communicate with each other."
+        },
+        {
+          "term": "Electronic Commerce (EC)",
+          "definition": "Internet-based communication to support day-to-day government, business, and consumer activities."
+        },
+        {
+          "term": "Corporate Strategic Planning",
+          "definition": "Analyzing an organization's activities to determine where value is added to products and/or services and the costs incurred for doing so."
+        },
+        {
+          "term": "Value Chain Analysis",
+          "definition": "An ongoing process that defines the mission, objectives, and strategies of an organization."
+        },
+        {
+          "term": "Mission Statement",
+          "definition": "A statement that makes it clear what business a company is in."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch05",
+      "chapter_ref": "Chapter 5",
+      "chapter_title": "Initiating and Planning Systems Development Projects",
+      "term_definitions": [
+        {
+          "term": "Economic Feasibility",
+          "definition": "The process of evaluating a project's expected costs and benefits, both tangible and intangible."
+        },
+        {
+          "term": "Logical Model",
+          "definition": "A diagram that depicts the logical components of a system."
+        },
+        {
+          "term": "Ongoing Feasibility Assessment",
+          "definition": "The ongoing process of evaluating whether a project is worth pursuing at different stages of its development."
+        },
+        {
+          "term": "Resource Feasibility",
+          "definition": "A measure of whether the organization has the resources to develop or purchase the system."
+        },
+        {
+          "term": "Organizational Feasibility",
+          "definition": "The evaluation of whether the system will be accepted by the people in the organization and align with the organizational culture."
+        },
+        {
+          "term": "Operational Feasibility",
+          "definition": "The ease with which a proposed system can be implemented and used effectively."
+        },
+        {
+          "term": "Technical Feasibility",
+          "definition": "The measurement of whether the system can be developed given the available technical resources and expertise."
+        },
+        {
+          "term": "Project Plan",
+          "definition": "A project proposal component that outlines the approach, timeline, and resources for development."
+        },
+        {
+          "term": "Scope Statement",
+          "definition": "The written description of the work that needs to be accomplished in order to deliver a product, service, or result with the specified features and functions."
+        },
+        {
+          "term": "Project Charter",
+          "definition": "A document that formally authorizes a project and provides the project manager with the authority to apply organizational resources."
+        },
+        {
+          "term": "Cost-Benefit Analysis",
+          "definition": "A process used to systematically determine the benefits and costs of a proposed system."
+        },
+        {
+          "term": "Integration Feasibility",
+          "definition": "The degree to which a system can be effectively integrated into the existing infrastructure and business processes."
+        },
+        {
+          "term": "Net Present Value",
+          "definition": "A method for calculating the time value of money in terms of the value today of future cash flows."
+        },
+        {
+          "term": "Risk Assessment",
+          "definition": "The process of assessing the likelihood and impact of risks in a project."
+        },
+        {
+          "term": "Risk Management",
+          "definition": "The act of identifying and documenting risks and determining ways to prevent or mitigate them."
+        },
+        {
+          "term": "Process Diagram",
+          "definition": "A graphic representation of the major steps in a system or process."
+        },
+        {
+          "term": "Usability Assessment",
+          "definition": "The process of determining whether the system will be usable by its intended users."
+        },
+        {
+          "term": "Legal and Regulatory Feasibility",
+          "definition": "The measure of how well the system complies with external laws and regulations."
+        },
+        {
+          "term": "Strategic Alignment",
+          "definition": "The measure of whether the project aligns with the organization's strategic goals and priorities."
+        },
+        {
+          "term": "Stakeholder Analysis",
+          "definition": "A systematic process of identifying and analyzing stakeholders to ensure their interests are considered."
+        },
+        {
+          "term": "Business Process Analysis",
+          "definition": "The process of gaining an understanding of how an organization currently operates in order to improve future processes."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch06",
+      "chapter_ref": "Chapter 6",
+      "chapter_title": "Determining System Requirements",
+      "term_definitions": [
+        {
+          "term": "Closed-ended Questions",
+          "definition": "Questions in interviews that ask those responding to choose from among a set of specified responses."
+        },
+        {
+          "term": "Disruptive Technologies",
+          "definition": "Technologies that enable breaking long-held business rules that inhibit organizations from making radical business changes."
+        },
+        {
+          "term": "Nominal Group Technique",
+          "definition": "A facilitated process that supports idea generation by groups. At the beginning of the process, group members work alone to generate ideas. The ideas are then pooled under the guidance of a trained facilitator."
+        },
+        {
+          "term": "Key Business Processes",
+          "definition": "The structured, measured set of activities designed to produce a specific output for a particular customer or market."
+        },
+        {
+          "term": "Prototyping",
+          "definition": "An iterative process in which requirements are converted to a working system that is continually revised through organized user collaboration."
+        },
+        {
+          "term": "Formal System",
+          "definition": "The official way a system works as described in organizational documentation."
+        },
+        {
+          "term": "Business Process Reengineering (BPR)",
+          "definition": "The search for, and implementation of, radical change in business processes to achieve breakthrough improvements in products and services."
+        },
+        {
+          "term": "Informal System",
+          "definition": "The way a system actually works."
+        },
+        {
+          "term": "Scribe",
+          "definition": "The person who makes detailed notes of the happenings at a JAD session."
+        },
+        {
+          "term": "Open-ended Questions",
+          "definition": "Questions in interviews that have no prespecified answers."
+        },
+        {
+          "term": "JAD Session Leader",
+          "definition": "The trained individual who plans and leads JAD sessions."
+        },
+        {
+          "term": "Joint Application Design (JAD)",
+          "definition": "A structured process in which users, managers, and analysts work together for several days in a series of meetings to clarify or review requirements."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch07",
+      "chapter_ref": "Chapter 7",
+      "chapter_title": "Structuring System Process Requirements",
+      "term_definitions": [
+        {
+          "term": "Data Flow Diagram (DFD)",
+          "definition": "A picture of the movement of data between external entities and the processes and data stores within a system."
+        },
+        {
+          "term": "Action Stubs",
+          "definition": "The part of a decision table that lists the actions that result for a given set of conditions."
+        },
+        {
+          "term": "Balancing",
+          "definition": "The conservation of inputs and outputs to a DFD process when that process is decomposed to a lower level."
+        },
+        {
+          "term": "Level-0 Diagram",
+          "definition": "A DFD that represents a system's major processes, data flows, and data stores at a high level of detail."
+        },
+        {
+          "term": "Source/Sink",
+          "definition": "The origin and/or destination of data; sometimes referred to as external entities."
+        },
+        {
+          "term": "Indifferent Condition",
+          "definition": "In a decision table, a condition whose value does not affect which actions are taken for two or more rules."
+        },
+        {
+          "term": "Context Diagram",
+          "definition": "An overview of an organizational system that shows the system boundary, external entities that interact with the system, and the major information flows between the entities and the system."
+        },
+        {
+          "term": "Primitive DFD",
+          "definition": "The lowest level of decomposition for a DFD."
+        },
+        {
+          "term": "DFD Completeness",
+          "definition": "The extent to which all necessary components of a DFD have been included and fully described."
+        },
+        {
+          "term": "Decision Table",
+          "definition": "A matrix representation of the logic of a decision; it specifies the possible conditions for the decision and the resulting actions."
+        },
+        {
+          "term": "DFD Consistency",
+          "definition": "The extent to which information contained on one level of a set of nested DFDs is also included on other levels."
+        },
+        {
+          "term": "Level-n Diagram",
+          "definition": "A DFD that is the result of n nested decompositions of a series of subprocesses from a process on a level-0 diagram."
+        },
+        {
+          "term": "Condition Stubs",
+          "definition": "The part of a decision table that lists the conditions relevant to the decision."
+        },
+        {
+          "term": "Process",
+          "definition": "The work or actions performed on data so that they are transformed, stored, or distributed."
+        },
+        {
+          "term": "Data Store",
+          "definition": "Data at rest, which may take the form of many different physical representations."
+        },
+        {
+          "term": "Gap Analysis",
+          "definition": "The process of discovering discrepancies between two or more sets of DFDs or discrepancies within a single DFD."
+        },
+        {
+          "term": "Rules",
+          "definition": "The part of a decision table that specifies which actions are to be followed for a given set of conditions."
+        },
+        {
+          "term": "Functional Decomposition",
+          "definition": "An iterative process of breaking the description of a system down into finer and finer detail, which creates a set of charts in which one process on a given chart is explained in greater detail on another chart."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch07_app",
+      "chapter_ref": "Chapter 7 Appendix",
+      "chapter_title": "Use-Cases, Activity Diagrams, and Business Process Modeling",
+      "term_definitions": [
+        {
+          "term": "Stakeholder",
+          "definition": "People who have a vested interest in the system being developed."
+        },
+        {
+          "term": "Minimal Guarantee",
+          "definition": "The least amount promised to the stakeholder by a use case."
+        },
+        {
+          "term": "Extend Relationship",
+          "definition": "An association between two use cases where one adds new behaviors or actions to the other."
+        },
+        {
+          "term": "Actor",
+          "definition": "An external entity that interacts with a system."
+        },
+        {
+          "term": "Trigger",
+          "definition": "An event that initiates a use case."
+        },
+        {
+          "term": "Use Case",
+          "definition": "A depiction of a system\u2019s behavior or functionality under various conditions as the system responds to requests from users."
+        },
+        {
+          "term": "Extension",
+          "definition": "The set of behaviors or functions in a use case that follow exceptions to the main success scenario."
+        },
+        {
+          "term": "Use Case Diagram",
+          "definition": "A picture showing system behavior, along with the key actors that interact with the system."
+        },
+        {
+          "term": "Success Guarantee",
+          "definition": "What a use-case must do effectively in order to satisfy stakeholders."
+        },
+        {
+          "term": "Include Relationship",
+          "definition": "An association between two use cases where one use case uses the functionality contained in the other."
+        },
+        {
+          "term": "Preconditions",
+          "definition": "Things that must be true before a use case can start."
+        },
+        {
+          "term": "Level",
+          "definition": "Perspective from which a use case description is written, typically ranging from high level to extremely detailed."
+        },
+        {
+          "term": "Swimlane",
+          "definition": "A way to visually encapsulate a process."
+        },
+        {
+          "term": "Event",
+          "definition": "A trigger that initiates the start of a process."
+        },
+        {
+          "term": "Pool",
+          "definition": "A way to encapsulate a process that has two or more participants."
+        },
+        {
+          "term": "Gateway",
+          "definition": "A decision point."
+        },
+        {
+          "term": "Flow",
+          "definition": "Shows the sequence of action in a process."
+        },
+        {
+          "term": "Activity",
+          "definition": "An action that must take place for a process to be completed."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch08",
+      "chapter_ref": "Chapter 8",
+      "chapter_title": "Structuring System Data Requirements",
+      "term_definitions": [
+        {
+          "term": "Conceptual Data Model",
+          "definition": "A detailed model that captures the overall structure of organizational data and is independent of any database management system or other implementation considerations."
+        },
+        {
+          "term": "Entity-Relationship Data Model (ER Model)",
+          "definition": "A detailed, logical representation of the entities, associations, and data elements for an organization or business area."
+        },
+        {
+          "term": "Entity-Relationship Diagram (ER Diagram)",
+          "definition": "A graphical representation of an E-R model."
+        },
+        {
+          "term": "Entity Type",
+          "definition": "A collection of entities that share common properties or characteristics."
+        },
+        {
+          "term": "Entity Instance",
+          "definition": "A single occurrence of an entity type."
+        },
+        {
+          "term": "Attribute",
+          "definition": "A named property or characteristic of an entity that is of interest to the organization."
+        },
+        {
+          "term": "Candidate Key",
+          "definition": "An attribute (or combination of attributes) that uniquely identifies each instance of an entity type."
+        },
+        {
+          "term": "Identifier",
+          "definition": "A candidate key that has been selected as the unique, identifying characteristic for an entity type."
+        },
+        {
+          "term": "Multivalued Attribute",
+          "definition": "An attribute that may take on more than one value for each entity instance."
+        },
+        {
+          "term": "Repeating Group",
+          "definition": "A set of two or more multivalued attributes that are logically related."
+        },
+        {
+          "term": "Relationship",
+          "definition": "An association between the instances of one or more entity types that is of interest to the organization."
+        },
+        {
+          "term": "Degree",
+          "definition": "The number of entity types that participate in a relationship."
+        },
+        {
+          "term": "Unary Relationship",
+          "definition": "A relationship between the instances of one entity type."
+        },
+        {
+          "term": "Binary Relationship",
+          "definition": "A relationship between instances of two entity types."
+        },
+        {
+          "term": "Ternary Relationship",
+          "definition": "A simultaneous relationship among instances of three entity types."
+        },
+        {
+          "term": "Cardinality",
+          "definition": "The number of instances of entity B that can (or must) be associated with each instance of entity A."
+        },
+        {
+          "term": "Associative Entity",
+          "definition": "An entity type that associates the instances of one or more entity types and contains attributes that are peculiar to the relationship between those entity instances."
+        },
+        {
+          "term": "Subtype",
+          "definition": "A subgrouping of the entities in an entity type that is meaningful to the organization."
+        },
+        {
+          "term": "Supertype",
+          "definition": "A generic entity type that has a relationship with one or more subtypes."
+        },
+        {
+          "term": "Total Specialization Rule",
+          "definition": "Specifies that each entity instance of the supertype must be a member of some subtype in the relationship."
+        },
+        {
+          "term": "Partial Specialization Rule",
+          "definition": "Specifies that an entity instance of the supertype does not have to belong to any subtype."
+        },
+        {
+          "term": "Disjoint Rule",
+          "definition": "Specifies that if an entity instance of the supertype is a member of one subtype, it cannot simultaneously be a member of any other subtype."
+        },
+        {
+          "term": "Overlap Rule",
+          "definition": "Specifies that an entity instance can simultaneously be a member of two (or more) subtypes."
+        },
+        {
+          "term": "Business Rules",
+          "definition": "Specifications that preserve the integrity of the logical data model."
+        },
+        {
+          "term": "Domain",
+          "definition": "The set of all data types and values that an attribute can assume."
+        },
+        {
+          "term": "Triggering Operation (Trigger)",
+          "definition": "An assertion or rule that governs the validity of data manipulation operations such as insert, update, and delete."
+        },
+        {
+          "term": "Required Attribute",
+          "definition": "An attribute that must have a value for every entity instance."
+        },
+        {
+          "term": "Optional Attribute",
+          "definition": "An attribute that may not have a value for every entity instance."
+        },
+        {
+          "term": "Composite Attribute",
+          "definition": "An attribute that has meaningful component parts."
+        },
+        {
+          "term": "Derived Attribute",
+          "definition": "An attribute whose value can be computed from related attribute values."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch08_app",
+      "chapter_ref": "Chapter 8 Appendix",
+      "chapter_title": "Object Modeling and Class Diagrams",
+      "term_definitions": [
+        {
+          "term": "Composition",
+          "definition": "A part object that belongs to only one whole object and that lives and dies with the whole."
+        },
+        {
+          "term": "Aggregation",
+          "definition": "A part-of relationship between a component object and an aggregate object."
+        },
+        {
+          "term": "Polymorphism",
+          "definition": "The same operation may apply to two or more classes in different ways."
+        },
+        {
+          "term": "Method",
+          "definition": "The implementation of an operation."
+        },
+        {
+          "term": "Abstract operation",
+          "definition": "Defines the form or protocol of the operation, but not its implementation."
+        },
+        {
+          "term": "Class-scope attribute",
+          "definition": "An attribute of a class that specifies a value common to an entire class, rather than a specific value for an instance."
+        },
+        {
+          "term": "Concrete class",
+          "definition": "A class that can have direct instances."
+        },
+        {
+          "term": "Abstract class",
+          "definition": "A class that has no direct instances but whose descendants may have direct instances."
+        },
+        {
+          "term": "Associative class",
+          "definition": "An association that has attributes or operations of its own or that participates in relationships with other classes."
+        },
+        {
+          "term": "Multiplicity",
+          "definition": "Indicates how many objects participate in a given relationship."
+        },
+        {
+          "term": "Association role",
+          "definition": "The end of an association where it connects to a class."
+        },
+        {
+          "term": "Association",
+          "definition": "A relationship among instances of object classes."
+        },
+        {
+          "term": "Class-scope operation",
+          "definition": "An operation that applies to a class rather than an object instance."
+        },
+        {
+          "term": "Update operation",
+          "definition": "An operation that alters the state of an object."
+        },
+        {
+          "term": "Query operation",
+          "definition": "An operation that accesses the state of an object but does not alter the state."
+        },
+        {
+          "term": "Constructor operation",
+          "definition": "An operation that creates a new instance of a class."
+        },
+        {
+          "term": "Encapsulation",
+          "definition": "The technique of hiding the internal implementation details of an object from its external view."
+        },
+        {
+          "term": "Operation",
+          "definition": "A function or a service that is provided by all the instances of a class."
+        },
+        {
+          "term": "Class diagram",
+          "definition": "A diagram that shows the static structure of an object-oriented model."
+        },
+        {
+          "term": "Object class",
+          "definition": "A logical grouping of objects that have the same (or similar) attributes and behaviors (methods)."
+        },
+        {
+          "term": "Behavior",
+          "definition": "Represents how an object acts and reacts."
+        },
+        {
+          "term": "State",
+          "definition": "Encompasses an object\u2019s properties (attributes and relationships) and the values those properties have."
+        },
+        {
+          "term": "Object",
+          "definition": "An entity that has a well-defined role in the application domain and has state, behavior, and identity characteristics."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch09",
+      "chapter_ref": "Chapter 9",
+      "chapter_title": "Designing Databases",
+      "term_definitions": [
+        {
+          "term": "Relation",
+          "definition": "A named, two-dimensional table of data, consisting of a set of named columns and an arbitrary number of unnamed rows."
+        },
+        {
+          "term": "Well-Structured Relation (or Table)",
+          "definition": "A relation that contains a minimum amount of redundancy and allows users to insert, modify, and delete the rows without errors or inconsistencies."
+        },
+        {
+          "term": "Normalization",
+          "definition": "The process of converting complex data structures into simple, stable data structures."
+        },
+        {
+          "term": "Functional Dependency",
+          "definition": "A particular relationship between two attributes."
+        },
+        {
+          "term": "Second Normal Form (2NF)",
+          "definition": "A relation for which every nonprimary key attribute is functionally dependent on the whole primary key."
+        },
+        {
+          "term": "Third Normal Form (3NF)",
+          "definition": "A relation that is in second normal form and that has no functional (transitive) dependencies between two (or more) nonprimary key attributes."
+        },
+        {
+          "term": "Foreign Key",
+          "definition": "An attribute that appears as a nonprimary key attribute in one relation and as a primary key attribute (or part of a primary key) in another relation."
+        },
+        {
+          "term": "Referential Integrity",
+          "definition": "An integrity constraint specifying that the value (or existence) of an attribute in one relation depends on the value (or existence) of the same attribute in another relation."
+        },
+        {
+          "term": "Recursive Foreign Key",
+          "definition": "A foreign key in a relation that references the primary key values of that same relation."
+        },
+        {
+          "term": "Synonym",
+          "definition": "Two different names that are used for the same attribute."
+        },
+        {
+          "term": "Homonym",
+          "definition": "A single attribute name that is used for two or more different attributes."
+        },
+        {
+          "term": "Field",
+          "definition": "The smallest unit of named application data recognized by system software."
+        },
+        {
+          "term": "Data Type",
+          "definition": "A coding scheme recognized by system software for representing organizational data."
+        },
+        {
+          "term": "Calculated Field",
+          "definition": "A field that can be derived from other database fields."
+        },
+        {
+          "term": "Default Value",
+          "definition": "A value a field will assume unless an explicit value is entered for that field."
+        },
+        {
+          "term": "Null Value",
+          "definition": "A special field value, distinct from a zero, blank, or any other value, that indicates that the value for the field is missing or otherwise unknown."
+        },
+        {
+          "term": "Physical Table",
+          "definition": "A named set of rows and columns that specifies the fields in each row of the table."
+        },
+        {
+          "term": "Denormalization",
+          "definition": "The process of splitting or combining normalized relations into physical tables based on affinity of use of rows and fields."
+        },
+        {
+          "term": "File Organization",
+          "definition": "A technique for physically arranging the records of a file."
+        },
+        {
+          "term": "Pointer",
+          "definition": "A field of data that can be used to locate a related field or row of data."
+        },
+        {
+          "term": "Sequential File Organization",
+          "definition": "A file organization technique in which the rows in the file are stored in sequence according to a primary key value."
+        },
+        {
+          "term": "Indexed File Organization",
+          "definition": "A file organization technique in which the rows are stored either sequentially or non-sequentially, and an index is created that allows software to locate individual rows."
+        },
+        {
+          "term": "Index",
+          "definition": "A table used to determine the location of rows in a file that satisfy some condition."
+        },
+        {
+          "term": "Hashed File Organization",
+          "definition": "A file organization technique in which the address for each row is determined using an algorithm."
+        },
+        {
+          "term": "Primary Key",
+          "definition": "An attribute whose value is unique across all occurrences of a relation and is used for data retrieval as well as for defining relationships."
+        },
+        {
+          "term": "Relational Database Model",
+          "definition": "Data represented as a set of related tables or relations."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch10",
+      "chapter_ref": "Chapter 10",
+      "chapter_title": "Designing Forms and Reports",
+      "term_definitions": [
+        {
+          "term": "Learnability",
+          "definition": "A usability dimension concerned with how difficult it is for the user to perform a task for the first time."
+        },
+        {
+          "term": "Stylesheet-based HTML",
+          "definition": "A Web design approach that separates content from the way in which it is formatted and presented, making ongoing maintenance easier and site-wide consistency much higher."
+        },
+        {
+          "term": "Wireframe",
+          "definition": "A simple design to show the placement of information elements on a screen and the space needed for each element."
+        },
+        {
+          "term": "Usability",
+          "definition": "An overall evaluation of how a system performs in supporting a particular user for a particular task."
+        },
+        {
+          "term": "Efficiency",
+          "definition": "A usability dimension concerned with how quickly users can perform tasks once they know how to perform them."
+        },
+        {
+          "term": "Error rate",
+          "definition": "A usability dimension concerned with how many errors a user might encounter and how easy it is to recover from those errors."
+        },
+        {
+          "term": "Memorability",
+          "definition": "A usability dimension concerned with how easy it is to remember how to accomplish a task when revisiting the system after a period of time."
+        },
+        {
+          "term": "Satisfaction and aesthetics",
+          "definition": "A usability dimension concerned with how enjoyable a system\u2019s visual appeal is and how enjoyable the system is to use."
+        },
+        {
+          "term": "Paper prototype",
+          "definition": "A series of mock screens that can be used to test content, look, and feel, as well as the task flow and other usability factors."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch11",
+      "chapter_ref": "Chapter 11",
+      "chapter_title": "Designing Interfaces and Dialogues",
+      "term_definitions": [
+        {
+          "term": "Interface",
+          "definition": "A method by which users interact with information systems."
+        },
+        {
+          "term": "Command language interaction",
+          "definition": "A human\u2013computer interaction method whereby users enter explicit statements into a system to invoke operations."
+        },
+        {
+          "term": "Dialogue diagramming",
+          "definition": "A formal method for designing and representing human\u2013computer dialogues using box and line diagrams."
+        },
+        {
+          "term": "Pop-up menu",
+          "definition": "A menu-positioning method that places a menu near the current cursor position."
+        },
+        {
+          "term": "Menu interaction",
+          "definition": "A human\u2013computer interaction method whereby a list of system options is provided and a specific command is invoked by user selection of a menu option."
+        },
+        {
+          "term": "Cookie crumbs",
+          "definition": "The technique of placing \u201ctabs\u201d or sequenced links on a Web page to show a user where he or she is within a site and where he or she has been."
+        },
+        {
+          "term": "Drop-down menu",
+          "definition": "A menu-positioning method that places the access point of the menu near the top line of the display; when accessed, menus open by dropping down onto the display."
+        },
+        {
+          "term": "Form interaction",
+          "definition": "A highly intuitive human\u2013computer interaction method whereby data fields are formatted in a manner similar to paper-based forms."
+        },
+        {
+          "term": "Object-based interaction",
+          "definition": "A human\u2013computer interaction method whereby symbols are used to represent commands or functions."
+        },
+        {
+          "term": "Icon",
+          "definition": "Graphical pictures that represent specific functions within a system."
+        },
+        {
+          "term": "Natural language interaction",
+          "definition": "A human\u2013computer interaction method whereby inputs to and outputs from a computer-based application are in a conventional speaking language such as English."
+        },
+        {
+          "term": "Dialogue",
+          "definition": "The sequence of interaction between a user and a system."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch12",
+      "chapter_ref": "Chapter 12",
+      "chapter_title": "Designing Distributed and Internet Systems",
+      "term_definitions": [
+        {
+          "term": "Local area network (LAN)",
+          "definition": "The cabling, hardware, and software used to connect workstations, computers, and file servers located in a confined geographical area (typically within one building or campus)."
+        },
+        {
+          "term": "Virtual machine",
+          "definition": "A software emulation of a physical computer system, both hardware and operating system, that allows more efficient sharing of physical hardware resources."
+        },
+        {
+          "term": "File server",
+          "definition": "A device that manages file operations and is shared by each client PC attached to a LAN."
+        },
+        {
+          "term": "Software as a service (SaaS)",
+          "definition": "A cloud computing model in which a service provider offers applications via a cloud infrastructure."
+        },
+        {
+          "term": "Client/Server architecture",
+          "definition": "A LAN-based computing environment in which a central database server or engine performs all database commands sent to it from client workstations, and application programs on each client concentrate on user interface functions."
+        },
+        {
+          "term": "Database engine",
+          "definition": "The (back-end) portion of the client/server database system running on the server that provides database processing and shared access functions."
+        },
+        {
+          "term": "Client",
+          "definition": "The (front-end) portion of the client/server database system that provides the user interface and data manipulation functions."
+        },
+        {
+          "term": "Application program interface (API)",
+          "definition": "Software building blocks that are used to ensure that common system capabilities, such as user interfaces and printing, and modules are standardized to facilitate the data exchange between clients and servers."
+        },
+        {
+          "term": "Middleware",
+          "definition": "A combination of hardware, software, and communication technologies that brings together data management, presentation, and analysis into a three-tiered (or n-tiered) client/server environment."
+        },
+        {
+          "term": "Platform as a service (PaaS)",
+          "definition": "A cloud computing model in which the customer can run his or her own applications that are typically designed using tools provided by the service provider; the customer has limited or no control over the underlying infrastructure."
+        },
+        {
+          "term": "Infrastructure as a service (IaaS)",
+          "definition": "A cloud computing model in which only the basic capabilities of processing, storage, and networking are provided."
+        },
+        {
+          "term": "Representational State Transfer (REST)",
+          "definition": "A relatively simple and fast protocol for communicating JSON data between Web service applications and the operating system."
+        },
+        {
+          "term": "Domain naming system (BIND)",
+          "definition": "A method for translating Internet domain names into Internet Protocol (IP) addresses."
+        },
+        {
+          "term": "Hypertext Transfer Protocol (HTTP)",
+          "definition": "A communications protocol for exchanging information on the Internet."
+        },
+        {
+          "term": "Hypertext Markup Language (HTML)",
+          "definition": "The standard language for representing content on the Web through the use of hundreds of command tags."
+        },
+        {
+          "term": "eXtensible Markup Language (XML)",
+          "definition": "An Internet authoring language that allows designers to create customized tags, enabling the definition, transmission, validation, and interpretation of data between applications."
+        },
+        {
+          "term": "Simple Object Access Protocol (SOAP)",
+          "definition": "A protocol for communicating XML data between Web service applications and the operating system."
+        },
+        {
+          "term": "Thin client",
+          "definition": "A client device designed so that most processing and data storage occur on the server."
+        },
+        {
+          "term": "Cascading Style Sheets (CSSs)",
+          "definition": "A set of webpage styling rules that tell a Web browser how to present a document."
+        },
+        {
+          "term": "eXtensible Style Sheet Language (XSL)",
+          "definition": "A specification for separating style from content when generating XML pages."
+        },
+        {
+          "term": "Application server",
+          "definition": "A computing server where data analysis functions primarily reside."
+        },
+        {
+          "term": "Three-tiered client/server architecture",
+          "definition": "Advanced client/server architectures in which there are three logical and distinct applications\u2014data management, presentation, and analysis\u2014that are combined to create a single information system."
+        },
+        {
+          "term": "JavaScript Object Notation (JSON)",
+          "definition": "A lightweight data interchange approach that is relatively easy for humans to understand and for computers to generate or interpret."
+        },
+        {
+          "term": "Content management system (CMS)",
+          "definition": "A special type of software application for collecting, organizing, and publishing Website content."
+        },
+        {
+          "term": "Web service",
+          "definition": "A method of communication between two electronic devices over a network."
+        },
+        {
+          "term": "Utility computing",
+          "definition": "A form of on-demand computing where resources in terms of processing, data storage, or networking are rented on an as-needed basis. The organization only pays for the services used."
+        },
+        {
+          "term": "Service-oriented architecture (SOA)",
+          "definition": "A software architecture in which business processes are broken down into individual components (or services) that are designed to achieve the desired results for the service consumer (which can be either an application, another service, or a person)."
+        },
+        {
+          "term": "Virtualization",
+          "definition": "The act of creating virtual (rather than physical) versions of a variety of computing capabilities including hardware platforms, operating systems, storage devices, and networks."
+        },
+        {
+          "term": "Information systems infrastructure",
+          "definition": "The hardware, software, data, facilities, human resources, and services used by organizations to support their decision making, business processes, and competitive strategy."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch13",
+      "chapter_ref": "Chapter 13",
+      "chapter_title": "System Implementation",
+      "term_definitions": [
+        {
+          "term": "Inspections",
+          "definition": "A testing technique in which participants examine program code for predictable language-specific errors."
+        },
+        {
+          "term": "Desk checking",
+          "definition": "A testing technique in which the program code is sequentially executed manually by the reviewer."
+        },
+        {
+          "term": "User documentation",
+          "definition": "Written or other visual information about an application system, how it works, and how to use it."
+        },
+        {
+          "term": "Direct installation",
+          "definition": "Changing over from the old information system to a new one by turning off the old system when the new one is turned on."
+        },
+        {
+          "term": "Unit testing",
+          "definition": "The process of testing each module alone in an attempt to discover any errors in its code; also called module testing."
+        },
+        {
+          "term": "Installation",
+          "definition": "The organizational process of changing over from the current information system to a new one."
+        },
+        {
+          "term": "Acceptance testing",
+          "definition": "The process whereby actual users test a completed information system, the end result of which is the users\u2019 acceptance of it."
+        },
+        {
+          "term": "System documentation",
+          "definition": "Detailed information about a system\u2019s design specifications, its internal workings, and its functionality."
+        },
+        {
+          "term": "Parallel installation",
+          "definition": "Running the old information system and the new one at the same time until management decides the old system can be turned off."
+        },
+        {
+          "term": "Integration testing",
+          "definition": "The process of bringing together all the modules that a program comprises for testing purposes. Modules are typically integrated in a top-down, incremental fashion."
+        },
+        {
+          "term": "Phased installation",
+          "definition": "Changing from the old information system to the new one incrementally, starting with one or a few functional components and then gradually extending the installation to cover the whole new system."
+        },
+        {
+          "term": "System testing",
+          "definition": "Bringing together all the programs that a system comprises for testing purposes. Programs are typically integrated in a top-down, incremental fashion."
+        },
+        {
+          "term": "Support",
+          "definition": "Providing ongoing educational and problem-solving assistance to information system users. Support material and jobs must be designed along with the associated information system."
+        },
+        {
+          "term": "Beta testing",
+          "definition": "User testing of a completed information system using real data in the real user environment."
+        },
+        {
+          "term": "Single-location installation",
+          "definition": "Trying out a new information system at one site and using the experience to decide if and how the new system should be deployed throughout the organization."
+        },
+        {
+          "term": "Alpha testing",
+          "definition": "User testing of a completed information system using simulated data."
+        },
+        {
+          "term": "Help desk",
+          "definition": "A single point of contact for all user inquiries and problems about a particular information system or for all users in a particular department."
+        },
+        {
+          "term": "Refactoring",
+          "definition": "Making a program simple after adding a new feature."
+        },
+        {
+          "term": "Testing harness",
+          "definition": "An automated testing environment used to review code for errors, standards violations, and other design flaws."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch14",
+      "chapter_ref": "Chapter 14",
+      "chapter_title": "Maintaining Information Systems",
+      "term_definitions": [
+        {
+          "term": "Maintenance",
+          "definition": "Changes made to a system to fix or enhance its functionality."
+        },
+        {
+          "term": "Corrective maintenance",
+          "definition": "Changes made to a system to repair flaws in its design, coding, or implementation."
+        },
+        {
+          "term": "Adaptive maintenance",
+          "definition": "Changes made to a system to evolve its functionality to changing business needs or technologies."
+        },
+        {
+          "term": "Perfective maintenance",
+          "definition": "Changes made to a system to add new features or to improve performance."
+        },
+        {
+          "term": "Preventive maintenance",
+          "definition": "Changes made to a system to avoid possible future problems."
+        },
+        {
+          "term": "Maintainability",
+          "definition": "The ease with which software can be understood, corrected, adapted, and enhanced."
+        },
+        {
+          "term": "Mean time between failures (MTBF)",
+          "definition": "A measurement of error occurrences that can be tracked over time to indicate the quality of a system."
+        },
+        {
+          "term": "Configuration management",
+          "definition": "The process of ensuring that only authorized changes are made to a system."
+        },
+        {
+          "term": "Baseline modules",
+          "definition": "Software modules that have been tested, documented, and approved to be included in the most recently created version of a system."
+        },
+        {
+          "term": "System librarian",
+          "definition": "A person responsible for controlling the checking out and checking in of baseline modules for a system when a system is being developed or maintained."
+        },
+        {
+          "term": "Build routines",
+          "definition": "Guidelines that list the instructions to construct an executable system from the baseline source code."
+        },
+        {
+          "term": "Reverse engineering",
+          "definition": "Automated tools that read program source code as input and create graphical and textual representations of design level information such as program control structures, data structures, logical flow, and data flow."
+        },
+        {
+          "term": "Reengineering",
+          "definition": "Automated tools that read program source code as input; perform an analysis of the program\u2019s data and logic; and then automatically, or interactively with a systems analyst, alter an existing system in an effort to improve its quality or performance."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,647 @@
+{
+  "book_title": "Information Systems for Business (IS451)",
+  "chapters": [
+    {
+      "chapter_id": "ch01",
+      "chapter_ref": "Chapter 1",
+      "chapter_title": "Business Functions and Business Processes",
+      "term_definitions": [
+        {
+          "term": "Information System",
+          "definition": "A coordinated setup involving technology, people, and procedures designed to organize and deliver useful content for business decision-making."
+        },
+        {
+          "term": "Enterprise Resource Planning",
+          "definition": "A comprehensive software suite that manages and connects all major operations of a business through a central database."
+        },
+        {
+          "term": "Functional Areas of Operation",
+          "definition": "The key departments within a company, each specializing in a distinct set of responsibilities to support overall goals."
+        },
+        {
+          "term": "Business Function",
+          "definition": "A specific task or activity carried out by a particular department within a company structure."
+        },
+        {
+          "term": "Business Process",
+          "definition": "A coordinated sequence of tasks that takes inputs and produces results that fulfill organizational or customer needs."
+        },
+        {
+          "term": "Input",
+          "definition": "A resource such as data, materials, or labor used as the starting point in a series of operational steps."
+        },
+        {
+          "term": "Output",
+          "definition": "The final product or service produced through operational activities and delivered to the end recipient."
+        },
+        {
+          "term": "Internal Customer",
+          "definition": "A recipient of services or outputs who operates within the same organization that provides them."
+        },
+        {
+          "term": "External Customer",
+          "definition": "A purchaser or user of goods or services who is not part of the organization offering them."
+        },
+        {
+          "term": "Integrated Information System",
+          "definition": "A digital framework that allows seamless and non-redundant data flow across all organizational departments."
+        },
+        {
+          "term": "Marketing and Sales",
+          "definition": "The organizational unit responsible for promoting offerings, handling customer interactions, and planning sales strategies."
+        },
+        {
+          "term": "Supply Chain Management",
+          "definition": "The area responsible for managing the flow of materials and goods from suppliers to customers efficiently."
+        },
+        {
+          "term": "Accounting and Finance",
+          "definition": "The function that tracks and manages financial transactions, expenditures, and reporting across a business."
+        },
+        {
+          "term": "Human Resources",
+          "definition": "The team or system focused on acquiring talent, overseeing training, and ensuring compliance with employment standards."
+        },
+        {
+          "term": "Sales Forecast",
+          "definition": "A projection used to estimate upcoming demand for products based on past performance and market trends."
+        },
+        {
+          "term": "Raw Data",
+          "definition": "Unprocessed information collected from operations that has yet to be organized or interpreted."
+        },
+        {
+          "term": "Per-Unit Cost",
+          "definition": "A calculated figure representing the expense required to make a single item or unit of a product."
+        },
+        {
+          "term": "Resource Expenditure Data",
+          "definition": "Data that reflects how resources like time, money, and materials have been consumed by a business."
+        },
+        {
+          "term": "Regulation Compliance",
+          "definition": "The practice of ensuring that a company\u2019s actions meet required legal and ethical standards."
+        },
+        {
+          "term": "Real-Time Information",
+          "definition": "Data that becomes instantly accessible as operations unfold, providing current and accurate updates."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch02",
+      "chapter_ref": "Chapter 2",
+      "chapter_title": "The Development of ERP Systems",
+      "term_definitions": [
+        {
+          "term": "Enterprise System",
+          "definition": "A centralized platform designed to enable data sharing across various business operations and managerial levels."
+        },
+        {
+          "term": "Enterprise Resource Planning (ERP)",
+          "definition": "A suite of integrated applications used to manage key processes and ensure consistency across departments."
+        },
+        {
+          "term": "Silos",
+          "definition": "An outdated system structure where departments operate independently with minimal data integration."
+        },
+        {
+          "term": "Client-Server Architecture",
+          "definition": "A network structure that allows multiple users to access shared resources and data across local systems."
+        },
+        {
+          "term": "Moore\u2019s Law",
+          "definition": "A principle that observes a consistent doubling of computational capacity approximately every 18 months."
+        },
+        {
+          "term": "Material Requirements Planning (MRP)",
+          "definition": "An early solution for planning inventory and production needs using computerized systems."
+        },
+        {
+          "term": "Electronic Data Interchange (EDI)",
+          "definition": "A system for exchanging standard business documents directly between organizations' computers."
+        },
+        {
+          "term": "Process Business Model",
+          "definition": "An approach that facilitates information flow across operational layers without the need for upper-level approval."
+        },
+        {
+          "term": "Application Hosting",
+          "definition": "An arrangement in which a third party provides and manages computing infrastructure and software access."
+        },
+        {
+          "term": "Business Management Systems (BMS)",
+          "definition": "A system type focused on helping an organization coordinate planning and implementation activities enterprise-wide."
+        },
+        {
+          "term": "Functional Business Systems (FBS)",
+          "definition": "Technology used to improve the performance of individual departments within an organization."
+        },
+        {
+          "term": "Transaction Processing System (TPS)",
+          "definition": "A tool for recording and processing day-to-day transactions such as inventory updates or payroll entries."
+        },
+        {
+          "term": "Batch Processing",
+          "definition": "A method where transactions are collected and processed together at a later time instead of instantly."
+        },
+        {
+          "term": "Online Transaction Processing (OLTP)",
+          "definition": "A system that handles and records each transaction as it occurs, providing immediate data updates."
+        },
+        {
+          "term": "Customer Relationship Management (CRM)",
+          "definition": "Software used to manage interactions and data associated with existing and prospective customers."
+        },
+        {
+          "term": "Product Lifecycle Management (PLM)",
+          "definition": "A solution that tracks information and activities related to a product from initial concept to disposal."
+        },
+        {
+          "term": "Computer-Aided Design (CAD)",
+          "definition": "A tool used to digitally create and refine technical designs and blueprints of physical products."
+        },
+        {
+          "term": "Computer-Aided Engineering (CAE)",
+          "definition": "A system that uses simulations and analysis to test how well a component or product performs."
+        },
+        {
+          "term": "Computer-Aided Manufacturing (CAM)",
+          "definition": "Software that controls machines and production lines to produce parts according to digital designs."
+        },
+        {
+          "term": "Discrete Manufacturing",
+          "definition": "A form of production involving individual, countable items such as electronics or vehicles."
+        },
+        {
+          "term": "Process Manufacturing",
+          "definition": "A type of manufacturing where the output is the result of chemical transformation and cannot be easily separated into parts."
+        },
+        {
+          "term": "Quality Control Systems",
+          "definition": "A system that monitors and evaluates the condition of materials or products throughout the manufacturing process."
+        },
+        {
+          "term": "Use Case Diagram",
+          "definition": "A visual tool used to display the interactions between external users and a system\u2019s functionalities."
+        },
+        {
+          "term": "Class Diagram",
+          "definition": "A representation of data structures showing types of objects and their relationships in a static view."
+        },
+        {
+          "term": "Object Diagram",
+          "definition": "A snapshot illustrating specific instances of system objects and their links at a single point in time."
+        },
+        {
+          "term": "Activity Diagram",
+          "definition": "A flow-based representation used to model the order and coordination of actions within a process."
+        },
+        {
+          "term": "Sequence Diagram",
+          "definition": "A diagram that captures the order and timing of message exchanges between users and system parts."
+        },
+        {
+          "term": "State Machine Diagram",
+          "definition": "A model that tracks how an item or system responds to internal changes or external stimuli over time."
+        },
+        {
+          "term": "Component Diagram",
+          "definition": "A schematic that shows how different parts of a system are organized and how they interact."
+        },
+        {
+          "term": "Package Diagram",
+          "definition": "A structural visualization that groups related system components into higher-level organizational units."
+        },
+        {
+          "term": "Deployment Diagram",
+          "definition": "A layout that maps where system software components are installed across physical hardware nodes."
+        },
+        {
+          "term": "Composite Structure Diagram",
+          "definition": "A diagram that exposes the inner structure of a class or object, showing what it contains and how parts relate."
+        },
+        {
+          "term": "Event Decomposition Technique",
+          "definition": "A process used to identify system-triggering conditions and associate them with specific system behaviors."
+        },
+        {
+          "term": "Elementary Business Process (EBP)",
+          "definition": "The smallest complete response by a system to an external trigger, providing measurable value."
+        },
+        {
+          "term": "Perfect Technology Assumption",
+          "definition": "A guideline used during analysis that ignores system limitations in order to focus on functional requirements."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch03-06",
+      "chapter_ref": "Chapter 3 to 6",
+      "chapter_title": "Functional Organizational Units and Divisions",
+      "term_definitions": [
+        {
+          "term": "Sales Order Processing",
+          "definition": "The steps that record customer requests, check availability, calculate prices, and finalize the terms of a transaction."
+        },
+        {
+          "term": "Available-to-Promise (ATP)",
+          "definition": "A real-time system check that evaluates current inventory and production capacity to confirm delivery dates."
+        },
+        {
+          "term": "Quotation",
+          "definition": "A formal document provided to a potential buyer offering prices and terms before an order is placed."
+        },
+        {
+          "term": "Packing List",
+          "definition": "A document that details the items included in a shipment and accompanies goods sent to customers."
+        },
+        {
+          "term": "RMA Number",
+          "definition": "A code used to authorize and track returned merchandise for proper credit and processing."
+        },
+        {
+          "term": "Customer Relationship Management",
+          "definition": "A set of tools and strategies for managing all customer interactions to improve business relationships."
+        },
+        {
+          "term": "Human Capital Management",
+          "definition": "The set of activities associated with managing workforce tasks like hiring, training, and compensation."
+        },
+        {
+          "term": "Succession Planning",
+          "definition": "A strategy for identifying and preparing future leaders to fill key positions when they become vacant."
+        },
+        {
+          "term": "Payroll Run",
+          "definition": "A process in which employee compensation is calculated, deductions are applied, and payment is finalized."
+        },
+        {
+          "term": "Travel Management",
+          "definition": "A process involving request, approval, and coordination of business travel within an organization."
+        },
+        {
+          "term": "Management by Objectives",
+          "definition": "An approach where managers and employees agree on goals and assess performance based on results."
+        },
+        {
+          "term": "Production Planning",
+          "definition": "A coordinated set of activities to determine what and when to produce based on demand and capacity."
+        },
+        {
+          "term": "Sales Forecast",
+          "definition": "A projection used to estimate future product demand based on historical data and marketing plans."
+        },
+        {
+          "term": "Sales and Operations Planning",
+          "definition": "A process that balances expected market demand with the organization's production capacity."
+        },
+        {
+          "term": "Demand Management",
+          "definition": "A link between demand planning and execution, producing a master schedule of what and when to produce."
+        },
+        {
+          "term": "Bill of Material",
+          "definition": "A structured list of components and materials required to manufacture a finished product."
+        },
+        {
+          "term": "Materials Requirements Planning",
+          "definition": "A calculation method that determines what materials are needed and when based on production schedules."
+        },
+        {
+          "term": "Detailed Scheduling",
+          "definition": "A method for planning how long and when each product should be produced to minimize costs."
+        },
+        {
+          "term": "Product Cost Variant",
+          "definition": "A methodology in ERP systems used to calculate the cost of making a product using a specific set of assumptions."
+        },
+        {
+          "term": "Activity-Based Costing",
+          "definition": "A costing approach that assigns indirect costs to products based on activities that generate those costs."
+        },
+        {
+          "term": "General Ledger",
+          "definition": "The main accounting record where all business transactions are posted and summarized."
+        },
+        {
+          "term": "Accounts Receivable",
+          "definition": "The total amount of money owed to a company by its customers for goods or services delivered."
+        },
+        {
+          "term": "Inventory Costing",
+          "definition": "The method of calculating the value of products in stock, including materials, labor, and overhead."
+        },
+        {
+          "term": "Tolerance Groups",
+          "definition": "A system feature that restricts user actions based on predefined monetary or access limits."
+        },
+        {
+          "term": "Extensible Business Reporting Language (XBRL)",
+          "definition": "A digital reporting standard used to exchange financial data in a structured, machine-readable format."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch07",
+      "chapter_ref": "Chapter 7",
+      "chapter_title": "Process Modeling, Improvement, and Implementation",
+      "term_definitions": [
+        {
+          "term": "Process Modeling",
+          "definition": "A technique that represents the flow and structure of a process to support understanding and improvement."
+        },
+        {
+          "term": "Requirements Engineering",
+          "definition": "The process of identifying, documenting, and managing the features that a system must have to meet business needs."
+        },
+        {
+          "term": "Functional Requirement",
+          "definition": "A specific behavior or function that a system must perform to fulfill user expectations."
+        },
+        {
+          "term": "Non-functional Requirement",
+          "definition": "A constraint or quality attribute such as security, scalability, or performance that affects how a system operates."
+        },
+        {
+          "term": "Requirements Elicitation",
+          "definition": "A structured method used to discover stakeholder needs through various data collection techniques."
+        },
+        {
+          "term": "Interview Checklist",
+          "definition": "A structured guide used before, during, and after a stakeholder conversation to ensure all topics are covered effectively."
+        },
+        {
+          "term": "Graphical Model",
+          "definition": "A visual or symbolic representation used to simplify and communicate aspects of a system or process."
+        },
+        {
+          "term": "Business Process Diagram",
+          "definition": "A visual format that illustrates one or more operational procedures within a business environment."
+        },
+        {
+          "term": "Data Flow Diagram",
+          "definition": "A type of diagram that displays how inputs are processed into outputs through various stages."
+        },
+        {
+          "term": "Use Case Diagram",
+          "definition": "A diagram that outlines interactions between users and a system, typically representing user scenarios."
+        },
+        {
+          "term": "Sequence Diagram",
+          "definition": "A model that shows how components of a system interact in sequence over time."
+        },
+        {
+          "term": "Unified Modeling Language (UML)",
+          "definition": "A standardized set of symbols and notations used to represent software systems visually."
+        },
+        {
+          "term": "Validation",
+          "definition": "An assessment to determine whether the correct needs and objectives have been identified."
+        },
+        {
+          "term": "Verification",
+          "definition": "A process for checking if documented requirements are stated clearly and accurately."
+        },
+        {
+          "term": "Flowchart",
+          "definition": "A diagram that uses symbols to visually map the steps or decisions in a workflow or process."
+        },
+        {
+          "term": "Process Mapping",
+          "definition": "A form of visual documentation that highlights steps in an existing workflow to identify improvement opportunities."
+        },
+        {
+          "term": "Deployment Flowcharting",
+          "definition": "A flowchart format that displays tasks aligned with the person or role responsible for each step."
+        },
+        {
+          "term": "Event Process Chain",
+          "definition": "A simplified model of a process using only events and functions to align with ERP system structures."
+        },
+        {
+          "term": "Activity Diagram",
+          "definition": "A UML diagram that shows the sequence and coordination of actions performed by users or systems."
+        },
+        {
+          "term": "Value Analysis",
+          "definition": "A method of analyzing each step in a process to determine how much it contributes to delivering value."
+        },
+        {
+          "term": "Dynamic Process Modeling",
+          "definition": "A computer-aided simulation technique used to predict outcomes of proposed changes to a process."
+        },
+        {
+          "term": "Workflow Tool",
+          "definition": "A digital system that automates the sequence, participants, and documentation of business tasks."
+        },
+        {
+          "term": "Organizational Change Management",
+          "definition": "A discipline focused on managing human responses and adaptation to structural or technological changes in a company."
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch08",
+      "chapter_ref": "Chapter 8",
+      "chapter_title": "Business Intelligence, Mobile Computing, and the Cloud",
+      "term_definitions": [
+        {
+          "term": "Radio Frequency Identification (RFID)",
+          "definition": "A technology used to track items using small radio-powered devices, often used in supply chain management."
+        },
+        {
+          "term": "RFID Tag",
+          "definition": "A small device with a microprocessor and antenna that can be attached to an object for wireless identification."
+        },
+        {
+          "term": "RFID Reader",
+          "definition": "A device that emits radio waves to detect and communicate with identification tags wirelessly."
+        },
+        {
+          "term": "Business Intelligence (BI)",
+          "definition": "A collection of tools and technologies that analyze large volumes of data to support business decision-making."
+        },
+        {
+          "term": "Data Mining",
+          "definition": "A technique that extracts patterns and useful insights from large datasets using statistical and computational methods."
+        },
+        {
+          "term": "Enterprise Performance Management",
+          "definition": "A method of setting organizational goals and measuring performance against them to improve strategic outcomes."
+        },
+        {
+          "term": "Governance, Risk, and Compliance",
+          "definition": "A set of practices aimed at ensuring an organization operates within legal and ethical boundaries."
+        },
+        {
+          "term": "Data Warehouse",
+          "definition": "A storage solution optimized for the efficient handling and analysis of large-scale, structured data."
+        },
+        {
+          "term": "Enterprise Information Management",
+          "definition": "A discipline that oversees how information is collected, managed, and used as a strategic business asset."
+        },
+        {
+          "term": "In-Memory Computing",
+          "definition": "A computing approach that stores large datasets directly in memory for faster analysis and processing."
+        },
+        {
+          "term": "Mobile Computing",
+          "definition": "The use of portable devices and wireless connectivity to access and interact with data and applications."
+        },
+        {
+          "term": "Cloud Computing",
+          "definition": "A model for delivering software and services over the internet rather than through local infrastructure."
+        },
+        {
+          "term": "Service-Oriented Architecture (SOA)",
+          "definition": "An architectural approach that enables services to be reused and integrated across business applications."
+        },
+        {
+          "term": "Software as a Service (SaaS)",
+          "definition": "A delivery model in which software is hosted remotely and accessed by users via the internet."
+        },
+        {
+          "term": "Advantages of SaaS",
+          "definition": "Lower upfront costs, faster implementation, reduced need for in-house technical expertise, and simpler support."
+        },
+        {
+          "term": "Disadvantages of SaaS",
+          "definition": "Security risks, limited customization, dependency on internet connectivity, and potential vendor lock-in."
+        },
+        {
+          "term": "Net Present Value (NPV)",
+          "definition": "A financial method that converts future cash flows into present value to evaluate the profitability of investments."
+        },
+        {
+          "term": "Hurdle Rate",
+          "definition": "The minimum rate of return a company expects to earn when investing in a project, used in NPV calculations."
+        }
+      ]
+    },
+    {
+      "chapter_id": "itil",
+      "chapter_ref": "Information Technology Infrastructure Library",
+      "chapter_title": "Service Management Framework: ITIL v3.1",
+      "term_definitions": [
+        {
+          "term": "IT Service Management",
+          "definition": "The coordinated planning and operation of IT processes to meet business needs effectively and efficiently."
+        },
+        {
+          "term": "Service Lifecycle",
+          "definition": "A structured approach for managing services from conception through retirement, including strategy, design, transition, operation, and improvement."
+        },
+        {
+          "term": "Service Strategy",
+          "definition": "The phase focused on defining market opportunities and converting them into services that offer value to customers."
+        },
+        {
+          "term": "Service Design",
+          "definition": "The stage where new or modified services are planned and specified before moving into operation."
+        },
+        {
+          "term": "Service Transition",
+          "definition": "The process of managing all tasks associated with the introduction and modification of services into the live environment."
+        },
+        {
+          "term": "Service Operation",
+          "definition": "The phase that ensures services are delivered effectively and meet agreed performance standards."
+        },
+        {
+          "term": "Continual Service Improvement",
+          "definition": "A continuous process of assessing and enhancing IT services to ensure they remain aligned with evolving business needs."
+        },
+        {
+          "term": "Utility",
+          "definition": "The aspect of a service that meets a specific need or purpose, making it 'fit for purpose'."
+        },
+        {
+          "term": "Warranty",
+          "definition": "The aspect of a service that ensures it is available when needed, making it 'fit for use'."
+        },
+        {
+          "term": "Service Level Agreement",
+          "definition": "A documented agreement that outlines expected service levels between a provider and customer."
+        },
+        {
+          "term": "Incident",
+          "definition": "An unplanned disruption to an IT service or a reduction in its quality."
+        },
+        {
+          "term": "Problem",
+          "definition": "The underlying cause of one or more incidents, often requiring deeper analysis to resolve."
+        },
+        {
+          "term": "Known Error",
+          "definition": "An identified cause of a problem that has a known workaround or solution, stored for future reference."
+        },
+        {
+          "term": "Change Management",
+          "definition": "A formal process that ensures standardized handling of changes to reduce risks and disruption."
+        },
+        {
+          "term": "Request for Change (RFC)",
+          "definition": "A formal proposal submitted to initiate a change in IT services or infrastructure."
+        },
+        {
+          "term": "Configuration Item (CI)",
+          "definition": "A component that needs to be managed in order to deliver an IT service, excluding people."
+        },
+        {
+          "term": "Service Catalog",
+          "definition": "A database or repository listing all live services provided to customers and their current status."
+        },
+        {
+          "term": "Availability",
+          "definition": "The probability that a system will function as expected during scheduled time."
+        },
+        {
+          "term": "Reliability",
+          "definition": "The likelihood that a system will perform consistently under defined conditions for a set time."
+        },
+        {
+          "term": "Mean Time Between Failures (MTBF)",
+          "definition": "A metric showing the average time between system failures."
+        },
+        {
+          "term": "Mean Time to Recover (MTTR)",
+          "definition": "A measure of how long it takes to repair a system and restore service after a failure."
+        },
+        {
+          "term": "Change Advisory Board (CAB)",
+          "definition": "A group of representatives who evaluate, approve, or reject proposed changes."
+        },
+        {
+          "term": "Service Desk",
+          "definition": "A function that acts as a single point of contact for users, handling incidents and service requests."
+        },
+        {
+          "term": "Service Portfolio",
+          "definition": "A comprehensive view of all services managed by a provider, including those in development and retired."
+        },
+        {
+          "term": "Service Level Package",
+          "definition": "A predefined bundle of services and service level options customized to specific customer needs."
+        },
+        {
+          "term": "7-Step Improvement Process",
+          "definition": "A structured methodology for identifying, analyzing, and implementing service improvements."
+        },
+        {
+          "term": "Key Performance Indicator (KPI)",
+          "definition": "A measurable element used to evaluate the success or performance of a process or service."
+        },
+        {
+          "term": "Critical Success Factor (CSF)",
+          "definition": "A key area of focus that must be achieved for a process or project to be successful."
+        },
+        {
+          "term": "Plan-Do-Check-Act (PDCA)",
+          "definition": "A cycle for continuous improvement involving planning, executing, monitoring, and refining actions."
+        }
+      ]
+    }
+  ]
+}

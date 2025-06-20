@@ -1,0 +1,110 @@
+/* styles/header.css */
+
+header {
+  position: relative; /* Needed for absolute positioning of child */
+  background-color: #A9002F; /* CSUN Red */
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem 2rem; /* Original padding */
+  /* Adjust padding to prevent overlap with button */
+  padding-left: 60px; /* Increased space on the left */
+  border-bottom: 4px solid #dcdcdc;
+}
+
+/* Reduce bottom padding slightly if button feels too low */
+/* header { padding-bottom: 1.5rem; } */
+
+
+header h1 {
+  margin: 0 0 0.4rem 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+header p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.home-btn {
+  position: absolute;
+  /* Position bottom-left */
+  bottom: 10px; /* Keep distance from bottom */
+  left: 15px;  /* Keep distance from left */
+
+  /* --- Styling Revamp --- */
+  background: transparent; /* Transparent background */
+  color: rgba(255, 255, 255, 0.8); /* White icon, slightly transparent */
+  border: 2px solid transparent; /* Transparent border initially */
+  /* --- Clickability / Layering --- */
+  z-index: 10; /* Ensure it's above other header content */
+  pointer-events: auto; /* Explicitly allow pointer events */
+  /* ----------------------------- */
+
+  border-radius: 8px; /* Less rounded, more button-like */
+  width: auto; /* Allow width to fit content */
+  height: auto; /* Allow height to fit content */
+  font-size: 1.8rem; /* Slightly larger icon */
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 8px; /* Add some padding around the icon */
+  box-shadow: none; /* No shadow initially */
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.1s;
+  display: none; /* Start hidden */
+}
+
+.home-btn:hover {
+  /* --- Updated Hover Styling --- */
+  background-color: rgba(255, 255, 255, 0.9); /* White background on hover */
+  color: #A9002F; /* Red icon on hover */
+  border-color: rgba(255, 255, 255, 0.9); /* Match background */
+  /* --------------------------- */
+  transform: scale(1.05);
+}
+
+.home-btn:active {
+    transform: scale(1.0);
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque on click */
+}
+
+.header-course-info {
+  margin-top: 8px; /* Space above the title */
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #f0f0f0; /* Light color */
+  opacity: 0.9;
+  min-height: 1.2em; /* Prevent layout shift when empty/loading */
+  text-align: center; /* Ensure centered */
+}
+
+/* Adjust padding if needed to accommodate the new element */
+header {
+   padding-bottom: 1rem; /* Slightly reduce bottom padding perhaps */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header {
+        padding-left: 15px; /* Reset padding */
+        padding-bottom: 55px; /* Keep space below for button */
+        padding-top: 1rem;
+        text-align: center; /* Keep centered maybe? Adjust if needed */
+    }
+    .home-btn {
+        bottom: 8px;
+        left: 10px;
+        font-size: 1.6rem; /* Adjust icon size */
+        padding: 4px 6px;
+    }
+		
+    .header-course-info {
+        font-size: 0.85rem;
+        margin-top: 5px;
+    }
+    header {
+        /* Adjust padding-bottom if home button was overlapping */
+         padding-bottom: 50px; /* Ensure enough space below content */
+    }
+}

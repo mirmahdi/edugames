@@ -1,0 +1,19 @@
+{
+  "courses": [
+    {
+      "id": "is312",
+      "title": "IS 312: Information Systems for Business Management",
+      "dataFile": "is312.json"
+    },
+    {
+      "id": "is431",
+      "title": "IS 431: Systems Analysis and Design",
+      "dataFile": "is431.json"
+    },
+    {
+      "id": "is451",
+      "title": "IS 451: Enterprise Applications and Project Management",
+      "dataFile": "is451.json"
+    }
+  ]
+}

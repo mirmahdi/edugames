@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drag & Fill - Interactive Learning</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Title -->
+  <h1 style="text-align: center;">Drag & Fill Activity</h1> <!-- Title will be updated by JS -->
+
+  <!-- Button Group (Centered) -->
+  <div id="button-container">
+    <button id="submitAnswers" class="action-button" disabled>Check Answers</button>
+    <button id="solveAll" class="action-button" disabled>Solve All</button>
+    <button id="resetGame" class="action-button" disabled>Reset</button>
+    <button id="undoMove" class="action-button" title="Undo last move" disabled>↶</button>
+    <button id="redoMove" class="action-button" title="Redo last undone move" disabled>↷</button>
+    <div class="game-controls">
+      <input type="checkbox" id="soundToggle" checked>
+      <label for="soundToggle" class="sound-toggle-label" title="Toggle Sound Effects">
+        <i class="fas fa-volume-up"></i>
+      </label>
+    </div>
+  </div>
+
+  <!-- Score and Timer Row -->
+  <div id="score-timer-container">
+    <div id="score-timer">
+      <div>⏱️ Time: <span id="timer">00:00</span></div>
+      <div>⭐ Score: <span id="score">0</span></div>
+    </div>
+  </div>
+
+  <!-- Standard Chapter Selection Area -->
+  <div id="chapter-selection-area" class="dropdown-container" style="text-align:center; margin-bottom: 20px;">
+       <label for="chapterSelect" class="label-text" style="margin-right:10px;">Select Chapter</label>
+       <div id="select-wrapper"><p class="label-text">Loading chapters...</p></div>
+   </div>
+
+  <!-- Immediate Feedback Toggle -->
+  <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px; gap: 8px;">
+    <div class="label-text">
+      Immediate<br>Feedback
+    </div>
+    <label for="feedbackToggle" class="toggle-switch">
+      <input type="checkbox" id="feedbackToggle" checked />
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- Word Bank Section -->
+  <div id="draggables" class="word-bank">
+    <!-- Populated by JS -->
+  </div>
+
+  <!-- Definitions / Blanks Section -->
+  <div id="game-container" style="display: none;"> <!-- Start hidden until data loads -->
+    <div id="text-area">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+
+  <!-- Feedback Message -->
+  <div id="feedback" style="text-align:center; margin-top:20px;"></div>
+
+</body>
+</html>

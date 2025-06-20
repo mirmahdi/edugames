@@ -1,0 +1,79 @@
+<!-- main.html -->
+<main>
+  <!-- Course Selection Section -->
+  <section class="course-selection">
+    <h2>1. Select Your Course</h2>
+    <fieldset id="courseOptions">
+      <legend class="sr-only">Available Courses</legend>
+      <div>
+        <input type="radio" id="is431" name="course" value="is431">
+        <label for="is431">IS 431: Systems Analysis and Design</label>
+      </div>
+      <div>
+        <input type="radio" id="is451" name="course" value="is451">
+        <label for="is451">IS 451: Enterprise Applications and Project Management</label>
+      </div>
+    </fieldset>
+    <p id="selectionHint" class="hint">Please select a course above to enable the game links.</p>
+  </section>
+
+  <!-- Game Selection Section -->
+  <section class="game-selection">
+      <h2>2. Choose a Game to Play</h2>
+      <div class="game-grid">
+
+          <!-- Hangman Game -->
+          <div class="game-card"
+               data-description="Test your vocabulary skills in this classic word-guessing game! Choose a chapter and difficulty level."
+               data-button-id="playHangmanBtn">
+            <div class="game-card-content">
+              <div class="game-title-container tooltip-trigger">
+                <span class="game-icon">🎯</span>
+                <h3>Hangman</h3>
+              </div>
+              <button id="playHangmanBtn" class="play-button tooltip-trigger" disabled>▶️ Play Game</button>
+            </div>
+          </div>
+
+          <!-- Matching Cards Game -->
+          <div class="game-card"
+               data-description="Sharpen your memory and learning by matching terms with their definitions. Track your score, moves, and time."
+               data-button-id="playMatchingBtn">
+            <div class="game-card-content">
+               <div class="game-title-container tooltip-trigger">
+                 <span class="game-icon">🃏</span>
+                 <h3>Matching Cards</h3>
+               </div>
+              <button id="playMatchingBtn" class="play-button tooltip-trigger" disabled>▶️ Play Game</button>
+              <div class="card-options">
+                  <label for="matchingCardsNum">Pairs:</label>
+                  <select id="matchingCardsNum" name="cards">
+                      <option value="" selected>Max</option>
+                      <option value="4">4</option>
+                      <option value="6">6</option>
+                      <option value="8">8</option>
+                      <option value="10">10</option>
+                      <option value="12">12</option>
+                      <option value="15">15</option>
+                      <option value="20">20</option>
+                  </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drag & Fill Game -->
+          <div class="game-card"
+               data-description="Drag the correct terms into the blanks to complete definitions and sentences. Choose immediate feedback!"
+               data-button-id="playDragFillBtn">
+            <div class="game-card-content">
+              <div class="game-title-container tooltip-trigger">
+                <span class="game-icon">✏️</span>
+                <h3>Drag & Fill</h3>
+              </div>
+              <button id="playDragFillBtn" class="play-button tooltip-trigger" disabled>▶️ Play Game</button>
+            </div>
+          </div>
+
+      </div> <!-- end .game-grid -->
+  </section>
+</main>

@@ -32,7 +32,8 @@ h1 {
 .button-group {
     display: flex;
     gap: 10px;
-    width: 100%;
+    margin-bottom: 15px;
+    align-items: center;
 }
 
 #newGameButton, #endGameButton {
@@ -191,35 +192,58 @@ h1 {
     text-align: left;
 }
 
+/* Container for the word display */
 .word-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    row-gap: 40px;
-    column-gap: 10px;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    flex-wrap: wrap; /* Allow wrapping BETWEEN words */
+    justify-content: center;
+    align-items: center; /* Align lines vertically */
+    gap: 10px; /* Space between words/letters */
+    row-gap: 15px; /* Space between lines when wrapping occurs */
+    margin-top: 30px; /* Adjusted margin */
+    margin-bottom: 40px; /* Adjusted margin */
+    line-height: 1; /* Prevent extra line height issues */
 }
 
+/* NEW: Style for the span wrapping each word */
+.hangman-word {
+    display: inline-flex; /* Use inline-flex to keep letters together */
+    white-space: nowrap; /* Prevent wrapping *inside* this span */
+    gap: 5px; /* Space between letters within a word */
+}
+
+/* Individual letter style */
 .word-letter {
+    display: inline-block; /* Make letters behave like inline blocks */
     font-size: 2rem;
     border-bottom: 3px solid #333;
-    width: 30px;
+    width: 30px; /* Width for the letter/underscore */
+    height: 2.5rem; /* Ensure consistent height */
     text-align: center;
-    flex: 0 0 auto;
+    line-height: 2.5rem; /* Vertically center letter */
+    flex: 0 0 auto; /* Prevent flex resizing */
     color: #000; /* Default color for guessed letters */
+    box-sizing: border-box; /* Include border in width/height */
 }
 
+/* Styles for revealed letters */
 .word-letter.revealed-wrong {
     color: darkred;
+    border-bottom-color: darkred; /* Optional: Change underscore color */
 }
 
 .word-letter.revealed-correct {
     color: darkgreen;
+    border-bottom-color: darkgreen; /* Optional: Change underscore color */
 }
 
+/* Style for spaces between words */
 .word-space {
-    width: 20px;
+    display: inline-block; /* Treat space like an inline element */
+    width: 20px; /* Visual width of the space */
+    height: 2.5rem; /* Match letter height */
+    flex: 0 0 auto; /* Prevent flex resizing */
+    border-bottom: none; /* No underscore for spaces */
 }
 
 .clue-container {
@@ -283,4 +307,62 @@ h1 {
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
     50% { transform: translateY(-50px) rotate(20deg); opacity: 0.8; }
     100% { transform: translateY(-100px) rotate(-20deg); opacity: 0; }
+}
+
+/* Visual Feedback for Invalid Key Press */
+.game-container.error-flash {
+    animation: flash-red 0.4s ease-out;
+}
+
+@keyframes flash-red {
+    0%, 100% {
+        background-color: #fff; /* Original background */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Original shadow */
+    }
+    50% {
+        background-color: #ffe0e0; /* Light red flash */
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.3); /* Optional red glow */
+    }
+}
+
+.game-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.sound-toggle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.sound-toggle input[type="checkbox"] {
+    display: none;
+}
+
+.sound-toggle-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.sound-toggle-label i {
+    font-size: 24px;
+    color: #999; /* Default gray color when sound is off */
+    transition: color 0.3s ease;
+}
+
+/* Green color when sound is enabled */
+.sound-toggle input[type="checkbox"]:checked + .sound-toggle-label i {
+    color: #4CAF50;
+}
+
+/* Hover effect */
+.sound-toggle-label:hover i {
+    opacity: 0.8;
 }
